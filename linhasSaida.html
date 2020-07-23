@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+ <title>Contatos</title>
+ <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+ <meta charset="utf-8">
+ <link href="css/contato.css" rel="stylesheet">
+ <!-- Bootstrap CSS -->
+
+ <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+  integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+ <nav class="navbar navbar-expand-lg navbar-dark bg-dark"><a class="navbar-brand" href="index.html">BusLine -
+   Mapas</a><button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado"
+   aria-controls="conteudoNavbarSuportado" aria-expanded="true" aria-label="Alterna navegação"><span
+    class="navbar-toggler-icon"></span></button>
+  <div class="navbar-collapse collapse show" id="conteudoNavbarSuportado">
+   <ul class="navbar-nav mr-auto">
+    <li class="nav-item"><a class="nav-link" href="index.html">Diurno</a></li>
+    <li class="nav-item"><a class="nav-link" href="placeNoturno.html">Noturno</a></li>
+    <li class="nav-item"><a class="nav-link" href="placeTerceiroNoturno.html">Terceiro Turno</a></li>
+    <li class="nav-item"><a class="nav-link" href="linhasSaida.html">Linhas de Saída</a></li>
+    <li class="nav-item"><a class="nav-link" href="contato.html">Contatos</a></li>
+   </ul>
+  </div>
+ </nav>
+ <main role="main" class="flex-shrink-0">
+  <h1 class="mt-5"></h1>
+  <div class="container">
+   <ul class="nav nav-tabs" id="myTab" role="tablist">
+    <li class="nav-item">
+      <a class="nav-link active" id="Diurno-tab" data-toggle="tab" href="#Diurno" role="tab" aria-controls="Diurno" aria-selected="true">Diurno</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" id="Noturno-tab" data-toggle="tab" href="#Noturno" role="tab" aria-controls="Noturno" aria-selected="false">Noturno</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" id="TerceiroTurno-tab" data-toggle="tab" href="#TerceiroTurno" role="tab" aria-controls="TerceiroTurno" aria-selected="false">Terceiro Turno</a>
+    </li>
+  </ul>
+  <div class="tab-content" id="myTabContent">
+    <div class="tab-pane fade show active" id="Diurno" role="tabpanel" aria-labelledby="Diurno-tab">
+     <h1 class="mt-5"></h1>
+   <div class="container">
+    <p>Escreva o nome do bairro de destino: - Por exemplo, "Centro"</p>
+    <input class="form-control" id="DiurnoInput" type="text" placeholder="Digite aqui..">
+    <br>
+    <ul class="list-group" id="diurnoList">
+     <li class="list-group-item">Bairro: <strong>FELIZ</strong> - Prestadora:<strong> NOVA PALMIRA</strong> - Linha: <strong>1</strong> </li>
+     <li class="list-group-item">Bairro: <strong>VILA PINGA</strong> - Prestadora:<strong> NOVA PALMIRA</strong> - Linha: <strong>1</strong> </li>
+     <li class="list-group-item">Bairro: <strong>VILA RICA</strong> - Prestadora:<strong> NOVA PALMIRA</strong> - Linha: <strong>1</strong> </li>
+     <li class="list-group-item">Bairro: <strong>FARROUPILHA</strong> - Prestadora:<strong> UNIDOS</strong> - Linha: <strong>2</strong> </li>
+     <li class="list-group-item">Bairro: <strong>NOVA PETROPOLIS</strong> - Prestadora:<strong> NOVA PALMIRA</strong> - Linha: <strong>3</strong> </li>
+     <li class="list-group-item">Bairro: <strong>VILA CRISTINA</strong> - Prestadora:<strong> NOVA PALMIRA</strong> - Linha: <strong>3</strong> </li>
+     <li class="list-group-item">Bairro: <strong>DESVIO RIZZO</strong> - Prestadora:<strong> UNIDOS</strong> - Linha: <strong>4</strong> </li>
+     <li class="list-group-item">Bairro: <strong>INDUSTRIAL</strong> - Prestadora:<strong> UNIDOS</strong> - Linha: <strong>4</strong> </li>
+     <li class="list-group-item">Bairro: <strong>Linha: TEMERÁRIA</strong> - Prestadora:<strong> NOVA PALMIRA</strong> - Linha: <strong>5</strong> </li>
+     <li class="list-group-item">Bairro: <strong>PICADA CARÁ</strong> - Prestadora:<strong> NOVA PALMIRA</strong> - Linha: <strong>5</strong> </li>
+     <li class="list-group-item">Bairro: <strong>SÃO ROQUE (Temerária)</strong> - Prestadora:<strong> NOVA PALMIRA</strong> - Linha: <strong>5</strong> </li>
+     <li class="list-group-item">Bairro: <strong>FARROUPILHA</strong> - Prestadora:<strong> GIRATUR</strong> - Linha: <strong>6</strong> </li>
+     <li class="list-group-item">Bairro: <strong>SÃO MARCOS</strong> - Prestadora:<strong> SÃO MARCOS</strong> - Linha: <strong>7</strong> </li>
+     <li class="list-group-item">Bairro: <strong>SÃO MARCOS</strong> - Prestadora:<strong> SÃO MARCOS</strong> - Linha: <strong>8</strong> </li>
+     <li class="list-group-item">Bairro: <strong>4ª LÉGUA</strong> - Prestadora:<strong> BRAGÉ</strong> - Linha: <strong>9</strong> </li>
+     <li class="list-group-item">Bairro: <strong>GALÓPOLIS</strong> - Prestadora:<strong> BRAGÉ</strong> - Linha: <strong>9</strong> </li>
+     <li class="list-group-item">Bairro: <strong>MORRO PARIS</strong> - Prestadora:<strong> NOVA PALMIRA</strong> - Linha: <strong>10</strong> </li>
+     <li class="list-group-item">Bairro: <strong>VALE REAL</strong> - Prestadora:<strong> NOVA PALMIRA</strong> - Linha: <strong>10</strong> </li>
+     <li class="list-group-item">Bairro: <strong>ALTO FELIZ</strong> - Prestadora:<strong> NOVA PALMIRA</strong> - Linha: <strong>11</strong> </li>
+     <li class="list-group-item">Bairro: <strong>CANTO DO RIO</strong> - Prestadora:<strong> NOVA PALMIRA</strong> - Linha: <strong>12</strong> </li>
+     <li class="list-group-item">Bairro: <strong>ESCADINHAS</strong> - Prestadora:<strong> NOVA PALMIRA</strong> - Linha: <strong>12</strong> </li>
+     <li class="list-group-item">Bairro: <strong>MATIEL</strong> - Prestadora:<strong> NOVA PALMIRA</strong> - Linha: <strong>12</strong> </li>
+     <li class="list-group-item">Bairro: <strong>FELIZ</strong> - Prestadora:<strong> NOVA PALMIRA</strong> - Linha: <strong>13</strong> </li>
+     <li class="list-group-item">Bairro: <strong>VALE REAL (RS 452) </strong> - Prestadora:<strong> NOVA PALMIRA</strong> - Linha: <strong>13</strong> </li>
+     <li class="list-group-item">Bairro: <strong>CANTO KREWER</strong> - Prestadora:<strong> NOVA PALMIRA</strong> - Linha: <strong>14</strong> </li>
+     <li class="list-group-item">Bairro: <strong>VILA PINGA</strong> - Prestadora:<strong> NOVA PALMIRA</strong> - Linha: <strong>14</strong> </li>
+     <li class="list-group-item">Bairro: <strong>ARROIO DO OURO</strong> - Prestadora:<strong> NOVA PALMIRA</strong> - Linha: <strong>15</strong> </li>
+     <li class="list-group-item">Bairro: <strong>FORQUETA BAIXA</strong> - Prestadora:<strong> NOVA PALMIRA</strong> - Linha: <strong>15</strong> </li>
+     <li class="list-group-item">Bairro: <strong>BOM FIM</strong> - Prestadora:<strong> NOVA PALMIRA</strong> - Linha: <strong>16</strong> </li>
+     <li class="list-group-item">Bairro: <strong>BOM PRINCIPIO</strong> - Prestadora:<strong> NOVA PALMIRA</strong> - Linha: <strong>16</strong> </li>
+     <li class="list-group-item">Bairro: <strong>RODOVIÁRIA DE FELIZ</strong> - Prestadora:<strong> NOVA PALMIRA</strong> - Linha: <strong>16</strong> </li>
+     <li class="list-group-item">Bairro: <strong>VALE DO HERMES</strong> - Prestadora:<strong> NOVA PALMIRA</strong> - Linha: <strong>16</strong> </li>
+     <li class="list-group-item">Bairro: <strong>CONCEIÇÃO - Linha: FEIJÓ</strong> - Prestadora:<strong> CAXIENSE</strong> - Linha: <strong>17</strong> </li>
+     <li class="list-group-item">Bairro: <strong>DESVIO RIZZO</strong> - Prestadora:<strong> CAXIENSE</strong> - Linha: <strong>17</strong> </li>
+     <li class="list-group-item">Bairro: <strong>PARAISO CRISTAL</strong> - Prestadora:<strong> CAXIENSE</strong> - Linha: <strong>17</strong> </li>
+     <li class="list-group-item">Bairro: <strong>ROTA DO SOL</strong> - Prestadora:<strong> CAXIENSE</strong> - Linha: <strong>17</strong> </li>
+     <li class="list-group-item">Bairro: <strong>SÃO LUCAS</strong> - Prestadora:<strong> CAXIENSE</strong> - Linha: <strong>17</strong> </li>
+     <li class="list-group-item">Bairro: <strong>SANTA CORONA</strong> - Prestadora:<strong> CAXIENSE</strong> - Linha: <strong>18</strong> </li>
+     <li class="list-group-item">Bairro: <strong>VILA LOBOS</strong> - Prestadora:<strong> CAXIENSE</strong> - Linha: <strong>18</strong> </li>
+     <li class="list-group-item">Bairro: <strong>ANHANGUERA</strong> - Prestadora:<strong> BRAGÉ</strong> - Linha: <strong>19</strong> </li>
+     <li class="list-group-item">Bairro: <strong>CIDADE NOVA</strong> - Prestadora:<strong> BRAGÉ</strong> - Linha: <strong>19</strong> </li>
+     <li class="list-group-item">Bairro: <strong>FORQUETA - CAXIAS</strong> - Prestadora:<strong> BRAGÉ</strong> - Linha: <strong>19</strong> </li>
+     <li class="list-group-item">Bairro: <strong>SEDE MARCOPOLO</strong> - Prestadora:<strong> BRAGÉ</strong> - Linha: <strong>19</strong> </li>
+     <li class="list-group-item">Bairro: <strong>FLORES DA CUNHA</strong> - Prestadora:<strong> BRAGÉ</strong> - Linha: <strong>20</strong> </li>
+     <li class="list-group-item">Bairro: <strong>VILA MAESTRA (RS 122)</strong> - Prestadora:<strong> BRAGÉ</strong> - Linha: <strong>20</strong> </li>
+     <li class="list-group-item">Bairro: <strong>CRISTOVÃO DE MENDOZA</strong> - Prestadora:<strong> CAXIENSE</strong> - Linha: <strong>21</strong> </li>
+     <li class="list-group-item">Bairro: <strong>HOSPITAL UNIMED</strong> - Prestadora:<strong> CAXIENSE</strong> - Linha: <strong>21</strong> </li>
+     <li class="list-group-item">Bairro: <strong>JARDELINO RAMOS</strong> - Prestadora:<strong> CAXIENSE</strong> - Linha: <strong>21</strong> </li>
+     <li class="list-group-item">Bairro: <strong>MARECHAL FLORIANO</strong> - Prestadora:<strong> CAXIENSE</strong> - Linha: <strong>21</strong> </li>
+     <li class="list-group-item">Bairro: <strong>SAGRADA FAMÍLIA</strong> - Prestadora:<strong> CAXIENSE</strong> - Linha: <strong>21</strong> </li>
+     <li class="list-group-item">Bairro: <strong>LOTEAMENTO ROTA NOVA</strong> - Prestadora:<strong> BRAGÉ</strong> - Linha: <strong>22</strong> </li>
+     <li class="list-group-item">Bairro: <strong>MATIODA</strong> - Prestadora:<strong> BRAGÉ</strong> - Linha: <strong>22</strong> </li>
+     <li class="list-group-item">Bairro: <strong>REOLON</strong> - Prestadora:<strong> BRAGÉ</strong> - Linha: <strong>22</strong> </li>
+     <li class="list-group-item">Bairro: <strong>TIJUCA</strong> - Prestadora:<strong> BRAGÉ</strong> - Linha: <strong>22</strong> </li>
+     <li class="list-group-item">Bairro: <strong>VALE VERDE </strong> - Prestadora:<strong> BRAGÉ</strong> - Linha: <strong>22</strong> </li>
+     <li class="list-group-item">Bairro: <strong>ESPLANADA</strong> - Prestadora:<strong> CAXIENSE</strong> - Linha: <strong>23</strong> </li>
+     <li class="list-group-item">Bairro: <strong>MONTE CARMELO</strong> - Prestadora:<strong> CAXIENSE</strong> - Linha: <strong>23</strong> </li>
+     <li class="list-group-item">Bairro: <strong>MONTES CLAROS</strong> - Prestadora:<strong> CAXIENSE</strong> - Linha: <strong>23</strong> </li>
+     <li class="list-group-item">Bairro: <strong>PAIQUERÊ</strong> - Prestadora:<strong> BRAGÉ</strong> - Linha: <strong>24</strong> </li>
+     <li class="list-group-item">Bairro: <strong>SÃO VICTOR COHAB</strong> - Prestadora:<strong> BRAGÉ</strong> - Linha: <strong>24</strong> </li>
+     <li class="list-group-item">Bairro: <strong>VITÓRIA</strong> - Prestadora:<strong> BRAGÉ</strong> - Linha: <strong>24</strong> </li>
+     <li class="list-group-item">Bairro: <strong>CHARQUEADAS</strong> - Prestadora:<strong> CAXIENSE</strong> - Linha: <strong>25</strong> </li>
+     <li class="list-group-item">Bairro: <strong>JARDIM DO SHOPING</strong> - Prestadora:<strong> CAXIENSE</strong> - Linha: <strong>25</strong> </li>
+     <li class="list-group-item">Bairro: <strong>PLANALTO RIO BRANCO</strong> - Prestadora:<strong> CAXIENSE</strong> - Linha: <strong>25</strong> </li>
+     <li class="list-group-item">Bairro: <strong>SÃO FRANCISCO</strong> - Prestadora:<strong> CAXIENSE</strong> - Linha: <strong>25</strong> </li>
+     <li class="list-group-item">Bairro: <strong>SHOPING IGUATEMI</strong> - Prestadora:<strong> CAXIENSE</strong> - Linha: <strong>25</strong> </li>
+     <li class="list-group-item">Bairro: <strong>CRUZEIRO (Via Luiz Michelon)</strong> - Prestadora:<strong> CAXIENSE</strong> - Linha: <strong>26</strong> </li>
+     <li class="list-group-item">Bairro: <strong>MECATRONICA</strong> - Prestadora:<strong> CAXIENSE</strong> - Linha: <strong>26</strong> </li>
+     <li class="list-group-item">Bairro: <strong>UCS</strong> - Prestadora:<strong> CAXIENSE</strong> - Linha: <strong>26</strong> </li>
+     <li class="list-group-item">Bairro: <strong>NOSSA SENHORA DO ROSARIO I</strong> - Prestadora:<strong> CAXIENSE</strong> - Linha: <strong>27</strong> </li>
+     <li class="list-group-item">Bairro: <strong>NOSSA SENHORA DO ROSARIO II</strong> - Prestadora:<strong> CAXIENSE</strong> - Linha: <strong>27</strong> </li>
+     <li class="list-group-item">Bairro: <strong>FLORESTA</strong> - Prestadora:<strong> CAXIENSE</strong> - Linha: <strong>28</strong> </li>
+     <li class="list-group-item">Bairro: <strong>INTRAL</strong> - Prestadora:<strong> CAXIENSE</strong> - Linha: <strong>28</strong> </li>
+     <li class="list-group-item">Bairro: <strong>MARIANI</strong> - Prestadora:<strong> CAXIENSE</strong> - Linha: <strong>28</strong> </li>
+     <li class="list-group-item">Bairro: <strong>RIO BRANCO</strong> - Prestadora:<strong> CAXIENSE</strong> - Linha: <strong>28</strong> </li>
+     <li class="list-group-item">Bairro: <strong>SAN VITO</strong> - Prestadora:<strong> CAXIENSE</strong> - Linha: <strong>28</strong> </li>
+     <li class="list-group-item">Bairro: <strong>3ª LÉGUA</strong> - Prestadora:<strong> CAXIENSE</strong> - Linha: <strong>29</strong> </li>
+     <li class="list-group-item">Bairro: <strong>GLÓRIA</strong> - Prestadora:<strong> CAXIENSE</strong> - Linha: <strong>29</strong> </li>
+     <li class="list-group-item">Bairro: <strong>NOSSA SENHORA DAS GRAÇAS</strong> - Prestadora:<strong> CAXIENSE</strong> - Linha: <strong>29</strong> </li>
+     <li class="list-group-item">Bairro: <strong>NOSSA SENHORA DO CARAVAGGIO</strong> - Prestadora:<strong> CAXIENSE</strong> - Linha: <strong>29</strong> </li>
+     <li class="list-group-item">Bairro: <strong>ORIENTAL</strong> - Prestadora:<strong> CAXIENSE</strong> - Linha: <strong>29</strong> </li>
+     <li class="list-group-item">Bairro: <strong>SÃO MATEUS</strong> - Prestadora:<strong> CAXIENSE</strong> - Linha: <strong>29</strong> </li>
+     <li class="list-group-item">Bairro: <strong>ANA RECH</strong> - Prestadora:<strong> CAXIENSE</strong> - Linha: <strong>30</strong> </li>
+     <li class="list-group-item">Bairro: <strong>ARROIO DAS MARRECAS</strong> - Prestadora:<strong> CAXIENSE</strong> - Linha: <strong>30</strong> </li>
+     <li class="list-group-item">Bairro: <strong>BARRAGEM FAXINAL</strong> - Prestadora:<strong> CAXIENSE</strong> - Linha: <strong>30</strong> </li>
+     <li class="list-group-item">Bairro: <strong>BOCA DA SERRA</strong> - Prestadora:<strong> CAXIENSE</strong> - Linha: <strong>30</strong> </li>
+     <li class="list-group-item">Bairro: <strong>SOLAR DO PRADO</strong> - Prestadora:<strong> CAXIENSE</strong> - Linha: <strong>30</strong> </li>
+     <li class="list-group-item">Bairro: <strong>VILA SECA</strong> - Prestadora:<strong> CAXIENSE</strong> - Linha: <strong>30</strong> </li>
+     <li class="list-group-item">Bairro: <strong>KAISER (ANDREAZZA)</strong> - Prestadora:<strong> BRAGÉ (reforço 29)</strong> - Linha: <strong>31</strong> </li>
+     <li class="list-group-item">Bairro: <strong>KAISER (BRISTOT MATERIAIS DE CONSTRUÇÃO) </strong> - Prestadora:<strong> BRAGÉ (reforço 29)</strong> - Linha: <strong>31</strong> </li>
+     <li class="list-group-item">Bairro: <strong>BECO DA FILOMENA</strong> - Prestadora:<strong> CAXIENSE</strong> - Linha: <strong>32</strong> </li>
+     <li class="list-group-item">Bairro: <strong>JARDIM IRACEMA</strong> - Prestadora:<strong> CAXIENSE</strong> - Linha: <strong>32</strong> </li>
+     <li class="list-group-item">Bairro: <strong>NOSSA SENHORA DAS DORES</strong> - Prestadora:<strong> CAXIENSE</strong> - Linha: <strong>32</strong> </li>
+     <li class="list-group-item">Bairro: <strong>SEDE SINDICATO METALÚRGICO</strong> - Prestadora:<strong> CAXIENSE</strong> - Linha: <strong>32</strong> </li>
+     <li class="list-group-item">Bairro: <strong>SERRARIA</strong> - Prestadora:<strong> CAXIENSE</strong> - Linha: <strong>32</strong> </li>
+     <li class="list-group-item">Bairro: <strong>CENTRO ( Via 20 de Setembro)</strong> - Prestadora:<strong> BRAGÉ</strong> - Linha: <strong>33</strong> </li>
+     <li class="list-group-item">Bairro: <strong>CINQUENTENÁRIO (Via Julio de Castilhos)</strong> - Prestadora:<strong> BRAGÉ</strong> - Linha: <strong>33</strong> </li>
+     <li class="list-group-item">Bairro: <strong>LOTEAMENTO BACHI</strong> - Prestadora:<strong> BRAGÉ</strong> - Linha: <strong>34</strong> </li>
+     <li class="list-group-item">Bairro: <strong>SANTA BÁRBARA</strong> - Prestadora:<strong> BRAGÉ</strong> - Linha: <strong>34</strong> </li>
+     <li class="list-group-item">Bairro: <strong>SÃO GOTARDO (Vila Seca)</strong> - Prestadora:<strong> BRAGÉ</strong> - Linha: <strong>34</strong> </li>
+     <li class="list-group-item">Bairro: <strong>VILA ALPINA</strong> - Prestadora:<strong> BRAGÉ</strong> - Linha: <strong>34</strong> </li>
+     <li class="list-group-item">Bairro: <strong>CASTELO</strong> - Prestadora:<strong> CAXIENSE</strong> - Linha: <strong>35</strong> </li>
+     <li class="list-group-item">Bairro: <strong>SANTO HOMOBOM</strong> - Prestadora:<strong> CAXIENSE</strong> - Linha: <strong>35</strong> </li>
+     <li class="list-group-item">Bairro: <strong>SÃO CRISTOVÃO</strong> - Prestadora:<strong> CAXIENSE</strong> - Linha: <strong>35</strong> </li>
+     <li class="list-group-item">Bairro: <strong>CRISTO REDENTOR (Via Tronca)</strong> - Prestadora:<strong> CAXIENSE</strong> - Linha: <strong>36</strong> </li>
+     <li class="list-group-item">Bairro: <strong>EXPOSIÇÃO (Via Tronca)</strong> - Prestadora:<strong> CAXIENSE</strong> - Linha: <strong>36</strong> </li>
+     <li class="list-group-item">Bairro: <strong>RIO BRANCO (Via Tronca)</strong> - Prestadora:<strong> CAXIENSE</strong> - Linha: <strong>36</strong> </li>
+     <li class="list-group-item">Bairro: <strong>ARCO BALENO</strong> - Prestadora:<strong> CAXIENSE</strong> - Linha: <strong>37</strong> </li>
+     <li class="list-group-item">Bairro: <strong>BOM PASTOR</strong> - Prestadora:<strong> CAXIENSE</strong> - Linha: <strong>37</strong> </li>
+     <li class="list-group-item">Bairro: <strong>SÃO CAETANO</strong> - Prestadora:<strong> CAXIENSE</strong> - Linha: <strong>37</strong> </li>
+     <li class="list-group-item">Bairro: <strong>SÃO CAETANO (Mobitec)</strong> - Prestadora:<strong> CAXIENSE</strong> - Linha: <strong>38</strong> </li>
+     <li class="list-group-item">Bairro: <strong>SÃO CAETANO DO SUL</strong> - Prestadora:<strong> CAXIENSE</strong> - Linha: <strong>38</strong> </li>
+     <li class="list-group-item">Bairro: <strong>GAUCHINHA</strong> - Prestadora:<strong> CAXIENSE</strong> - Linha: <strong>39</strong> </li>
+     <li class="list-group-item">Bairro: <strong>KAISER</strong> - Prestadora:<strong> CAXIENSE</strong> - Linha: <strong>39</strong> </li>
+     <li class="list-group-item">Bairro: <strong>SALGADO FILHO</strong> - Prestadora:<strong> CAXIENSE</strong> - Linha: <strong>39</strong> </li>
+     <li class="list-group-item">Bairro: <strong>AMÉLIA</strong> - Prestadora:<strong> CAXIENSE</strong> - Linha: <strong>40</strong> </li>
+     <li class="list-group-item">Bairro: <strong>BOSQUE DAS ARAUCÁRIAS</strong> - Prestadora:<strong> CAXIENSE</strong> - Linha: <strong>40</strong> </li>
+     <li class="list-group-item">Bairro: <strong>DESVIO RIZZO</strong> - Prestadora:<strong> CAXIENSE</strong> - Linha: <strong>40</strong> </li>
+     <li class="list-group-item">Bairro: <strong>CAMPOS DA SERRA</strong> - Prestadora:<strong> CAXIENSE</strong> - Linha: <strong>41</strong> </li>
+     <li class="list-group-item">Bairro: <strong>DE ZORZI</strong> - Prestadora:<strong> CAXIENSE</strong> - Linha: <strong>41</strong> </li>
+     <li class="list-group-item">Bairro: <strong>PENA BRANCA</strong> - Prestadora:<strong> CAXIENSE</strong> - Linha: <strong>41</strong> </li>
+     <li class="list-group-item">Bairro: <strong>SÃO LUIZ</strong> - Prestadora:<strong> CAXIENSE</strong> - Linha: <strong>41</strong> </li>
+     <li class="list-group-item">Bairro: <strong>SÃO VALENTIN (Cruzeiro)</strong> - Prestadora:<strong> CAXIENSE</strong> - Linha: <strong>41</strong> </li>
+     <li class="list-group-item">Bairro: <strong>6ª LÉGUA</strong> - Prestadora:<strong> CAXIENSE</strong> - Linha: <strong>42</strong> </li>
+     <li class="list-group-item">Bairro: <strong>BELA VISTA</strong> - Prestadora:<strong> CAXIENSE</strong> - Linha: <strong>42</strong> </li>
+     <li class="list-group-item">Bairro: <strong>LA PALOMA</strong> - Prestadora:<strong> CAXIENSE</strong> - Linha: <strong>42</strong> </li>
+     <li class="list-group-item">Bairro: <strong>SÃO VIRGÍLIO</strong> - Prestadora:<strong> CAXIENSE</strong> - Linha: <strong>42</strong> </li>
+     <li class="list-group-item">Bairro: <strong>VILA LEON</strong> - Prestadora:<strong> CAXIENSE</strong> - Linha: <strong>42</strong> </li>
+     <li class="list-group-item">Bairro: <strong>CENTRO ( via 18 do Forte)</strong> - Prestadora:<strong> GIRATUR</strong> - Linha: <strong>43</strong> </li>
+     <li class="list-group-item">Bairro: <strong>CENTRO ( via 18 do Forte)</strong> - Prestadora:<strong> BRAGÉ</strong> - Linha: <strong>44</strong> </li>
+     <li class="list-group-item">Bairro: <strong>FAZENDA SOUZA</strong> - Prestadora:<strong> CAXIENSE</strong> - Linha: <strong>45</strong> </li>
+     <li class="list-group-item">Bairro: <strong>ROTA DO SOL</strong> - Prestadora:<strong> CAXIENSE</strong> - Linha: <strong>45</strong> </li>
+     <li class="list-group-item">Bairro: <strong>SÃO BRÁS</strong> - Prestadora:<strong> CAXIENSE</strong> - Linha: <strong>45</strong> </li>
+     <li class="list-group-item">Bairro: <strong>SÃO ROQUE (Fazenda Souza)</strong> - Prestadora:<strong> CAXIENSE</strong> - Linha: <strong>45</strong> </li>
+     <li class="list-group-item">Bairro: <strong>BELO HORIZONTE</strong> - Prestadora:<strong> GIRATUR</strong> - Linha: <strong>46</strong> </li>
+     <li class="list-group-item">Bairro: <strong>NOSSA SENHORA DA SAÚDE</strong> - Prestadora:<strong> GIRATUR</strong> - Linha: <strong>46</strong> </li>
+     <li class="list-group-item">Bairro: <strong>PORTAL DA MAESTRA</strong> - Prestadora:<strong> GIRATUR</strong> - Linha: <strong>46</strong> </li>
+     <li class="list-group-item">Bairro: <strong>VILA IPÊ</strong> - Prestadora:<strong> GIRATUR</strong> - Linha: <strong>46</strong> </li>
+     <li class="list-group-item">Bairro: <strong>VINHEDOS</strong> - Prestadora:<strong> GIRATUR</strong> - Linha: <strong>46</strong> </li>
+     <li class="list-group-item">Bairro: <strong>PLANALTO (Marcopolo)</strong> - Prestadora:<strong> GIRATUR</strong> - Linha: <strong>47</strong> </li>
+     <li class="list-group-item">Bairro: <strong>VILA VERDE</strong> - Prestadora:<strong> GIRATUR</strong> - Linha: <strong>47</strong> </li>
+     <li class="list-group-item">Bairro: <strong>HOSPITAL FÁTIMA</strong> - Prestadora:<strong> CAXIENSE</strong> - Linha: <strong>48</strong> </li>
+     <li class="list-group-item">Bairro: <strong>PIO X</strong> - Prestadora:<strong> CAXIENSE</strong> - Linha: <strong>48</strong> </li>
+     <li class="list-group-item">Bairro: <strong>SAGRADA FAMÍLIA</strong> - Prestadora:<strong> CAXIENSE</strong> - Linha: <strong>48</strong> </li>
+     <li class="list-group-item">Bairro: <strong>UNIVERSITÁRIO </strong> - Prestadora:<strong> CAXIENSE</strong> - Linha: <strong>48</strong> </li>
+     <li class="list-group-item">Bairro: <strong>BELA VISTA</strong> - Prestadora:<strong> CAXIENSE</strong> - Linha: <strong>49</strong> </li>
+     <li class="list-group-item">Bairro: <strong>MONTE REALE</strong> - Prestadora:<strong> CAXIENSE</strong> - Linha: <strong>49</strong> </li>
+     <li class="list-group-item">Bairro: <strong>PLANALTO (Cancha de areia)</strong> - Prestadora:<strong> CAXIENSE</strong> - Linha: <strong>49</strong> </li>
+     <li class="list-group-item">Bairro: <strong>FÁTIMA </strong> - Prestadora:<strong> CAXIENSE</strong> - Linha: <strong>50</strong> </li>
+     <li class="list-group-item">Bairro: <strong>INTERLAGOS</strong> - Prestadora:<strong> CAXIENSE</strong> - Linha: <strong>50</strong> </li>
+     <li class="list-group-item">Bairro: <strong>JARDIM ESMERALDA</strong> - Prestadora:<strong> CAXIENSE</strong> - Linha: <strong>50</strong> </li>
+     <li class="list-group-item">Bairro: <strong>SANTA CATARINA</strong> - Prestadora:<strong> CAXIENSE</strong> - Linha: <strong>50</strong> </li>
+     <li class="list-group-item">Bairro: <strong>FÁTIMA</strong> - Prestadora:<strong> BRAGÉ</strong> - Linha: <strong>51</strong> </li>
+     <li class="list-group-item">Bairro: <strong>MAXI ATACADO</strong> - Prestadora:<strong> BRAGÉ</strong> - Linha: <strong>51</strong> </li>
+     <li class="list-group-item">Bairro: <strong>PERIMETRAL NORTE</strong> - Prestadora:<strong> BRAGÉ</strong> - Linha: <strong>51</strong> </li>
+     <li class="list-group-item">Bairro: <strong>CRISTO REDENTOR</strong> - Prestadora:<strong> CAXIENSE</strong> - Linha: <strong>52</strong> </li>
+     <li class="list-group-item">Bairro: <strong>IPIRANGA</strong> - Prestadora:<strong> CAXIENSE</strong> - Linha: <strong>52</strong> </li>
+     <li class="list-group-item">Bairro: <strong>PANAZZOLO</strong> - Prestadora:<strong> CAXIENSE</strong> - Linha: <strong>52</strong> </li>
+     <li class="list-group-item">Bairro: <strong>ALTOS DO SEMINÁRIO</strong> - Prestadora:<strong> CAXIENSE</strong> - Linha: <strong>53</strong> </li>
+     <li class="list-group-item">Bairro: <strong>COLINA SORRISO</strong> - Prestadora:<strong> CAXIENSE</strong> - Linha: <strong>53</strong> </li>
+     <li class="list-group-item">Bairro: <strong>PIONEIRO</strong> - Prestadora:<strong> CAXIENSE</strong> - Linha: <strong>53</strong> </li>
+     <li class="list-group-item">Bairro: <strong>ROTA DO SOL (Posto São Luiz)</strong> - Prestadora:<strong> CAXIENSE</strong> - Linha: <strong>53</strong> </li>
+     <li class="list-group-item">Bairro: <strong>SÃO JOSÉ</strong> - Prestadora:<strong> CAXIENSE</strong> - Linha: <strong>53</strong> </li>
+     <li class="list-group-item">Bairro: <strong>FÁTIMA BAIXO</strong> - Prestadora:<strong> CAXIENSE</strong> - Linha: <strong>54</strong> </li>
+     <li class="list-group-item">Bairro: <strong>JARDIM ITÁLIA</strong> - Prestadora:<strong> CAXIENSE</strong> - Linha: <strong>54</strong> </li>
+     <li class="list-group-item">Bairro: <strong>MORADA DOS ALPES</strong> - Prestadora:<strong> CAXIENSE</strong> - Linha: <strong>54</strong> </li>
+     <li class="list-group-item">Bairro: <strong>PARQUE OÁSIS</strong> - Prestadora:<strong> CAXIENSE</strong> - Linha: <strong>54</strong> </li>
+     <li class="list-group-item">Bairro: <strong>SANTA LÚCIA</strong> - Prestadora:<strong> CAXIENSE</strong> - Linha: <strong>54</strong> </li>
+     <li class="list-group-item">Bairro: <strong>SÃO JOSÉ (Senai)</strong> - Prestadora:<strong> CAXIENSE</strong> - Linha: <strong>54</strong> </li>
+     <li class="list-group-item">Bairro: <strong>BELA VISTA</strong> - Prestadora:<strong> CAXIENSE</strong> - Linha: <strong>55</strong> </li>
+     <li class="list-group-item">Bairro: <strong>CRUZEIRO</strong> - Prestadora:<strong> CAXIENSE</strong> - Linha: <strong>55</strong> </li>
+     <li class="list-group-item">Bairro: <strong>PETRÓPOLIS</strong> - Prestadora:<strong> CAXIENSE</strong> - Linha: <strong>55</strong> </li>
+     <li class="list-group-item">Bairro: <strong>CENTENÁRIO</strong> - Prestadora:<strong> CAXIENSE</strong> - Linha: <strong>56</strong> </li>
+     <li class="list-group-item">Bairro: <strong>PARQUE OÁSIS</strong> - Prestadora:<strong> CAXIENSE</strong> - Linha: <strong>56</strong> </li>
+     <li class="list-group-item">Bairro: <strong>AEROPORTO</strong> - Prestadora:<strong> CAXIENSE</strong> - Linha: <strong>57</strong> </li>
+     <li class="list-group-item">Bairro: <strong>SANTOS DUMONT</strong> - Prestadora:<strong> CAXIENSE</strong> - Linha: <strong>57</strong> </li>
+     <li class="list-group-item">Bairro: <strong>JARDIM DAS HORTÊNCIAS</strong> - Prestadora:<strong> GIRATUR</strong> - Linha: <strong>59</strong> </li>
+     <li class="list-group-item">Bairro: <strong>MARILAND</strong> - Prestadora:<strong> GIRATUR</strong> - Linha: <strong>59</strong> </li>
+     <li class="list-group-item">Bairro: <strong>SÃO CIRO</strong> - Prestadora:<strong> GIRATUR</strong> - Linha: <strong>59</strong> </li>
+     <li class="list-group-item">Bairro: <strong>SÃO CIRO II</strong> - Prestadora:<strong> GIRATUR</strong> - Linha: <strong>59</strong> </li>
+     <li class="list-group-item">Bairro: <strong>SÉCULO XX</strong> - Prestadora:<strong> GIRATUR</strong> - Linha: <strong>59</strong> </li>
+     <li class="list-group-item">Bairro: <strong>DIAMANTINO</strong> - Prestadora:<strong> GIRATUR</strong> - Linha: <strong>60</strong> </li>
+     <li class="list-group-item">Bairro: <strong>PRESIDENTE VARGAS</strong> - Prestadora:<strong> GIRATUR</strong> - Linha: <strong>60</strong> </li>
+     <li class="list-group-item">Bairro: <strong>TREVISO</strong> - Prestadora:<strong> GIRATUR</strong> - Linha: <strong>60</strong> </li>
+     <li class="list-group-item">Bairro: <strong>PLANALTO</strong> - Prestadora:<strong> CAXIENSE</strong> - Linha: <strong>61</strong> </li>
+     <li class="list-group-item">Bairro: <strong>VILA MARI</strong> - Prestadora:<strong> CAXIENSE</strong> - Linha: <strong>61</strong> </li>
+     <li class="list-group-item">Bairro: <strong>CRUZEIRO</strong> - Prestadora:<strong> GIRATUR</strong> - Linha: <strong>62</strong> </li>
+     <li class="list-group-item">Bairro: <strong>CENTRO (via 18 do Forte)</strong> - Prestadora:<strong> CAXIENSE</strong> - Linha: <strong>63</strong> </li>
+     <li class="list-group-item">Bairro: <strong>MARECHAL FLORIANO</strong> - Prestadora:<strong> CAXIENSE</strong> - Linha: <strong>63</strong> </li>
+     <li class="list-group-item">Bairro: <strong>SAINT ETIENE</strong> - Prestadora:<strong> CAXIENSE</strong> - Linha: <strong>63</strong> </li>
+     <li class="list-group-item">Bairro: <strong>BR 116</strong> - Prestadora:<strong> CAXIENSE</strong> - Linha: <strong>64</strong> </li>
+     <li class="list-group-item">Bairro: <strong>RIO BRANCO</strong> - Prestadora:<strong> CAXIENSE</strong> - Linha: <strong>64</strong> </li>
+     <li class="list-group-item">Bairro: <strong>SÃO LEOPOLDO</strong> - Prestadora:<strong> CAXIENSE</strong> - Linha: <strong>64</strong> </li>
+     <li class="list-group-item">Bairro: <strong>1° MAIO</strong> - Prestadora:<strong> CAXIENSE</strong> - Linha: <strong>65</strong> </li>
+     <li class="list-group-item">Bairro: <strong>HOSPITAL DO CÍRCULO</strong> - Prestadora:<strong> CAXIENSE</strong> - Linha: <strong>65</strong> </li>
+     <li class="list-group-item">Bairro: <strong>JARDIM AMÉRICA</strong> - Prestadora:<strong> CAXIENSE</strong> - Linha: <strong>65</strong> </li>
+     <li class="list-group-item">Bairro: <strong>MADUREIRA</strong> - Prestadora:<strong> CAXIENSE</strong> - Linha: <strong>65</strong> </li>
+     <li class="list-group-item">Bairro: <strong>UNIVERSITÁRIO </strong> - Prestadora:<strong> CAXIENSE</strong> - Linha: <strong>65</strong> </li>
+     <li class="list-group-item">Bairro: <strong>JARDIM ELDORADO</strong> - Prestadora:<strong> CAXIENSE</strong> - Linha: <strong>66</strong> </li>
+     <li class="list-group-item">Bairro: <strong>JARDIM IRACEMA</strong> - Prestadora:<strong> CAXIENSE</strong> - Linha: <strong>66</strong> </li>
+     <li class="list-group-item">Bairro: <strong>SANTO ANTÔNIO</strong> - Prestadora:<strong> CAXIENSE</strong> - Linha: <strong>66</strong> </li>
+     <li class="list-group-item">Bairro: <strong>PARADA CRISTAL</strong> - Prestadora:<strong> SÃO MARCOS</strong> - Linha: <strong>67</strong> </li>
+     <li class="list-group-item">Bairro: <strong>SÃO VALENTIN (Parada Cristal)</strong> - Prestadora:<strong> SÃO MARCOS</strong> - Linha: <strong>67</strong> </li>
+     <li class="list-group-item">Bairro: <strong>PLANALTO (Marcopolo)</strong> - Prestadora:<strong> CAXIENSE</strong> - Linha: <strong>68</strong> </li>
+     <li class="list-group-item">Bairro: <strong>COLINA DO SOL</strong> - Prestadora:<strong> CAXIENSE</strong> - Linha: <strong>69</strong> </li>
+     <li class="list-group-item">Bairro: <strong>SANTA FÉ</strong> - Prestadora:<strong> CAXIENSE</strong> - Linha: <strong>69</strong> </li>
+     <li class="list-group-item">Bairro: <strong>VENEZZA</strong> - Prestadora:<strong> CAXIENSE</strong> - Linha: <strong>69</strong> </li>
+     <li class="list-group-item">Bairro: <strong>JARDIM ADORADO</strong> - Prestadora:<strong> BRAGÉ</strong> - Linha: <strong>70</strong> </li>     
+    </ul>
+   </div>
+    </div>
+    <div class="tab-pane fade" id="Noturno" role="tabpanel" aria-labelledby="Noturno-tab">
+     <h1 class="mt-5"></h1>
+   <div class="container">
+    <p>Escreva o nome do bairro de destino: - Por exemplo, "Centro"</p>
+    <input class="form-control" id="NoturnoInput" type="text" placeholder="Digite aqui..">
+    <br>
+    <ul class="list-group" id="NoturnoList">
+     <li class="list-group-item">Bairro: <strong> ANA RECH</strong> - Prestadora:<strong> UNIDOS</strong> - Linha: <strong> P01</strong> </li>
+     <li class="list-group-item">Bairro: <strong> ARROIO DAS MARRECAS</strong> - Prestadora:<strong> UNIDOS</strong> - Linha: <strong> P01</strong> </li>
+     <li class="list-group-item">Bairro: <strong> VILA SECA</strong> - Prestadora:<strong> UNIDOS</strong> - Linha: <strong> P01</strong> </li>
+     <li class="list-group-item">Bairro: <strong> BEVILÁQUA</strong> - Prestadora:<strong> UNIDOS</strong> - Linha: <strong> P02</strong> </li>
+     <li class="list-group-item">Bairro: <strong> FAZENDA SOUZA</strong> - Prestadora:<strong> UNIDOS</strong> - Linha: <strong> P02</strong> </li>
+     <li class="list-group-item">Bairro: <strong> SÃO BRÁS</strong> - Prestadora:<strong> UNIDOS</strong> - Linha: <strong> P02</strong> </li>
+     <li class="list-group-item">Bairro: <strong> SÃO ROQUE (Fazenda Souza)</strong> - Prestadora:<strong> UNIDOS</strong> - Linha: <strong> P02</strong> </li>
+     <li class="list-group-item">Bairro: <strong> BARRAGEM FAXINAL</strong> - Prestadora:<strong> UNIDOS</strong> - Linha: <strong> P03</strong> </li>
+     <li class="list-group-item">Bairro: <strong> BOCA DA SERRA</strong> - Prestadora:<strong> UNIDOS</strong> - Linha: <strong> P03</strong> </li>
+     <li class="list-group-item">Bairro: <strong> SANTA BÁRBARA</strong> - Prestadora:<strong> UNIDOS</strong> - Linha: <strong> P03</strong> </li>
+     <li class="list-group-item">Bairro: <strong> SÃO GOTARDO (Vila Seca)</strong> - Prestadora:<strong> UNIDOS</strong> - Linha: <strong> P03</strong> </li>
+     <li class="list-group-item">Bairro: <strong> ALTO FELIZ (Sociedade Arroio Feliz)</strong> - Prestadora:<strong> NOVA PALMIRA</strong> - Linha: <strong> P04</strong> </li>
+     <li class="list-group-item">Bairro: <strong> ALTO FELIZ (Brigada - Sociedade)</strong> - Prestadora:<strong> NOVA PALMIRA</strong> - Linha: <strong> P04</strong> </li>
+     <li class="list-group-item">Bairro: <strong> ARROIO DO OURO (RS 452)</strong> - Prestadora:<strong> NOVA PALMIRA</strong> - Linha: <strong> P04</strong> </li>
+     <li class="list-group-item">Bairro: <strong> FELIZ (Concretos KG)</strong> - Prestadora:<strong> NOVA PALMIRA</strong> - Linha: <strong> P04</strong> </li>
+     <li class="list-group-item">Bairro: <strong> FELIZ ( Vínícula Don Guerino)</strong> - Prestadora:<strong> NOVA PALMIRA</strong> - Linha: <strong> P04</strong> </li>
+     <li class="list-group-item">Bairro: <strong> GALÓPOLIS</strong> - Prestadora:<strong> NOVA PALMIRA</strong> - Linha: <strong> P04</strong> </li>
+     <li class="list-group-item">Bairro: <strong> MORRO BELO</strong> - Prestadora:<strong> NOVA PALMIRA</strong> - Linha: <strong> P04</strong> </li>
+     <li class="list-group-item">Bairro: <strong> MORRO CAPIM</strong> - Prestadora:<strong> NOVA PALMIRA</strong> - Linha: <strong> P04</strong> </li>
+     <li class="list-group-item">Bairro: <strong> VALE REAL(Lombada Eletrônica - RS 452)</strong> - Prestadora:<strong> NOVA PALMIRA</strong> - Linha: <strong> P04</strong> </li>
+     <li class="list-group-item">Bairro: <strong> CANTO KREWER</strong> - Prestadora:<strong> NOVA PALMIRA</strong> - Linha: <strong> P05</strong> </li>
+     <li class="list-group-item">Bairro: <strong> LOTEAMENTO PARQUE REAL</strong> - Prestadora:<strong> NOVA PALMIRA</strong> - Linha: <strong> P05</strong> </li>
+     <li class="list-group-item">Bairro: <strong> MORRO PARIS</strong> - Prestadora:<strong> NOVA PALMIRA</strong> - Linha: <strong> P05</strong> </li>
+     <li class="list-group-item">Bairro: <strong> VALE REAL (RS 452) </strong> - Prestadora:<strong> NOVA PALMIRA</strong> - Linha: <strong> P05</strong> </li>
+     <li class="list-group-item">Bairro: <strong> VILA PINGA (Esquina Zimmermann)</strong> - Prestadora:<strong> NOVA PALMIRA</strong> - Linha: <strong> P05</strong> </li>
+     <li class="list-group-item">Bairro: <strong> BANANAL</strong> - Prestadora:<strong> NOVA PALMIRA</strong> - Linha: <strong> P06</strong> </li>
+     <li class="list-group-item">Bairro: <strong> FELIZ - SÃO ROQUE (Sobra)</strong> - Prestadora:<strong> NOVA PALMIRA</strong> - Linha: <strong> P06</strong> </li>
+     <li class="list-group-item">Bairro: <strong> NOVA PALMIRA (RS 452)</strong> - Prestadora:<strong> NOVA PALMIRA</strong> - Linha: <strong> P06</strong> </li>
+     <li class="list-group-item">Bairro: <strong> PICADA CARÁ</strong> - Prestadora:<strong> NOVA PALMIRA</strong> - Linha: <strong> P06</strong> </li>
+     <li class="list-group-item">Bairro: <strong> VILA RICA</strong> - Prestadora:<strong> NOVA PALMIRA</strong> - Linha: <strong> P06</strong> </li>
+     <li class="list-group-item">Bairro: <strong> ARROIO BELO</strong> - Prestadora:<strong> NOVA PALMIRA</strong> - Linha: <strong> P07</strong> </li>
+     <li class="list-group-item">Bairro: <strong> BOM FIM (Comunidade Santa Inácio)</strong> - Prestadora:<strong> NOVA PALMIRA</strong> - Linha: <strong> P07</strong> </li>
+     <li class="list-group-item">Bairro: <strong> FELIZ (Canto do Rio)</strong> - Prestadora:<strong> NOVA PALMIRA</strong> - Linha: <strong> P07</strong> </li>
+     <li class="list-group-item">Bairro: <strong> FELIZ (Rodoviária)</strong> - Prestadora:<strong> NOVA PALMIRA</strong> - Linha: <strong> P07</strong> </li>
+     <li class="list-group-item">Bairro: <strong> FELIZ (Trevo Lauro Weber)</strong> - Prestadora:<strong> NOVA PALMIRA</strong> - Linha: <strong> P07</strong> </li>
+     <li class="list-group-item">Bairro: <strong> MATIEL</strong> - Prestadora:<strong> NOVA PALMIRA</strong> - Linha: <strong> P07</strong> </li>
+     <li class="list-group-item">Bairro: <strong> VALE DO HERMES</strong> - Prestadora:<strong> NOVA PALMIRA</strong> - Linha: <strong> P07</strong> </li>
+     <li class="list-group-item">Bairro: <strong> VILA CRISTINA (RS 452) </strong> - Prestadora:<strong> NOVA PALMIRA</strong> - Linha: <strong> P07</strong> </li>
+     <li class="list-group-item">Bairro: <strong> FORQUETA</strong> - Prestadora:<strong> GIRATUR</strong> - Linha: <strong> P08</strong> </li>
+     <li class="list-group-item">Bairro: <strong> 4ª LÉGUA</strong> - Prestadora:<strong> BRAGÉ</strong> - Linha: <strong> P09</strong> </li>
+     <li class="list-group-item">Bairro: <strong> LOTEAMENTO VÊNETO</strong> - Prestadora:<strong> BRAGÉ</strong> - Linha: <strong> P09</strong> </li>
+     <li class="list-group-item">Bairro: <strong> VILA LOBOS</strong> - Prestadora:<strong> BRAGÉ</strong> - Linha: <strong> P09</strong> </li>
+     <li class="list-group-item">Bairro: <strong> ANHANGUERA(DESVIO RIZZO)</strong> - Prestadora:<strong> CAXIENSE</strong> - Linha: <strong> P10</strong> </li>
+     <li class="list-group-item">Bairro: <strong> BOSQUE DAS ARAUCÁRIAS</strong> - Prestadora:<strong> CAXIENSE</strong> - Linha: <strong> P10</strong> </li>
+     <li class="list-group-item">Bairro: <strong> DESVIO RIZZO</strong> - Prestadora:<strong> CAXIENSE</strong> - Linha: <strong> P10</strong> </li>
+     <li class="list-group-item">Bairro: <strong> ROTA DO SOL (Posto São Luiz)</strong> - Prestadora:<strong> CAXIENSE</strong> - Linha: <strong> P10</strong> </li>
+     <li class="list-group-item">Bairro: <strong> SANTA TEREZA</strong> - Prestadora:<strong> CAXIENSE</strong> - Linha: <strong> P10</strong> </li>
+     <li class="list-group-item">Bairro: <strong> CAMPOS DA SERRA</strong> - Prestadora:<strong> CAXIENSE</strong> - Linha: <strong> P11</strong> </li>
+     <li class="list-group-item">Bairro: <strong> TREVISO</strong> - Prestadora:<strong> CAXIENSE</strong> - Linha: <strong> P11</strong> </li>
+     <li class="list-group-item">Bairro: <strong> CONCEIÇÃO - LINHA FEIJÓ</strong> - Prestadora:<strong> CAXIENSE</strong> - Linha: <strong> P12</strong> </li>
+     <li class="list-group-item">Bairro: <strong> DESVIO RIZZO</strong> - Prestadora:<strong> CAXIENSE</strong> - Linha: <strong> P12</strong> </li>
+     <li class="list-group-item">Bairro: <strong> INDUSTRIAL</strong> - Prestadora:<strong> CAXIENSE</strong> - Linha: <strong> P12</strong> </li>
+     <li class="list-group-item">Bairro: <strong> SÃO LUCAS</strong> - Prestadora:<strong> CAXIENSE</strong> - Linha: <strong> P12</strong> </li>
+     <li class="list-group-item">Bairro: <strong> DE ZORZI (UBS Diamantino via Vanderlei Padilha Pescador)</strong> - Prestadora:<strong> CAXIENSE</strong> - Linha: <strong> P13</strong> </li>
+     <li class="list-group-item">Bairro: <strong> DIAMANTINO</strong> - Prestadora:<strong> CAXIENSE</strong> - Linha: <strong> P13</strong> </li>
+     <li class="list-group-item">Bairro: <strong> ESCADINHAS</strong> - Prestadora:<strong> CAXIENSE</strong> - Linha: <strong> P13</strong> </li>
+     <li class="list-group-item">Bairro: <strong> PRESIDENTE VARGAS</strong> - Prestadora:<strong> CAXIENSE</strong> - Linha: <strong> P13</strong> </li>
+     <li class="list-group-item">Bairro: <strong> 6ª LÉGUA</strong> - Prestadora:<strong> CAXIENSE</strong> - Linha: <strong> P14</strong> </li>
+     <li class="list-group-item">Bairro: <strong> SÃO VIRGÍLIO</strong> - Prestadora:<strong> CAXIENSE</strong> - Linha: <strong> P14</strong> </li>
+     <li class="list-group-item">Bairro: <strong> VILA LEON</strong> - Prestadora:<strong> CAXIENSE</strong> - Linha: <strong> P14</strong> </li>
+     <li class="list-group-item">Bairro: <strong> CRUZEIRO (Via Rodrigues Alves)</strong> - Prestadora:<strong> CAXIENSE</strong> - Linha: <strong> P15</strong> </li>
+     <li class="list-group-item">Bairro: <strong> ALTOS DO SEMINÁRIO(BAIXO)</strong> - Prestadora:<strong> CAXIENSE</strong> - Linha: <strong> P16</strong> </li>
+     <li class="list-group-item">Bairro: <strong> COLINA SORRISO</strong> - Prestadora:<strong> CAXIENSE</strong> - Linha: <strong> P16</strong> </li>
+     <li class="list-group-item">Bairro: <strong> FÁTIMA BAIXO (Via Mário Lopes)</strong> - Prestadora:<strong> CAXIENSE</strong> - Linha: <strong> P16</strong> </li>
+     <li class="list-group-item">Bairro: <strong> PARQUE OÁSIS (Condomínio Villaggio Ventura)</strong> - Prestadora:<strong> CAXIENSE</strong> - Linha: <strong> P16</strong> </li>
+     <li class="list-group-item">Bairro: <strong> SANTA LÚCIA</strong> - Prestadora:<strong> CAXIENSE</strong> - Linha: <strong> P16</strong> </li>
+     <li class="list-group-item">Bairro: <strong> SÃO JOSÉ (Senai)</strong> - Prestadora:<strong> CAXIENSE</strong> - Linha: <strong> P16</strong> </li>
+     <li class="list-group-item">Bairro: <strong> 1° MAIO</strong> - Prestadora:<strong> CAXIENSE</strong> - Linha: <strong> P17</strong> </li>
+     <li class="list-group-item">Bairro: <strong> JARDELINO RAMOS</strong> - Prestadora:<strong> CAXIENSE</strong> - Linha: <strong> P17</strong> </li>
+     <li class="list-group-item">Bairro: <strong> JARDIM AMÉRICA</strong> - Prestadora:<strong> CAXIENSE</strong> - Linha: <strong> P17</strong> </li>
+     <li class="list-group-item">Bairro: <strong> MADUREIRA</strong> - Prestadora:<strong> CAXIENSE</strong> - Linha: <strong> P17</strong> </li>
+     <li class="list-group-item">Bairro: <strong> PIO X</strong> - Prestadora:<strong> CAXIENSE</strong> - Linha: <strong> P17</strong> </li>
+     <li class="list-group-item">Bairro: <strong> SAGRADA FAMÍLIA</strong> - Prestadora:<strong> CAXIENSE</strong> - Linha: <strong> P17</strong> </li>
+     <li class="list-group-item">Bairro: <strong> HOSPITAL DO CÍRCULO</strong> - Prestadora:<strong> CAXIENSE</strong> - Linha: <strong> P18</strong> </li>
+     <li class="list-group-item">Bairro: <strong> HOSPITAL FÁTIMA</strong> - Prestadora:<strong> CAXIENSE</strong> - Linha: <strong> P18</strong> </li>
+     <li class="list-group-item">Bairro: <strong> SANTA CATARINA</strong> - Prestadora:<strong> CAXIENSE</strong> - Linha: <strong> P18</strong> </li>
+     <li class="list-group-item">Bairro: <strong> UNIVERSITÁRIO </strong> - Prestadora:<strong> CAXIENSE</strong> - Linha: <strong> P18</strong> </li>
+     <li class="list-group-item">Bairro: <strong> JARDIM ADORADO</strong> - Prestadora:<strong> CAXIENSE</strong> - Linha: <strong> P19</strong> </li>
+     <li class="list-group-item">Bairro: <strong> JARDIM IRACEMA III (Mercado Diego)</strong> - Prestadora:<strong> CAXIENSE</strong> - Linha: <strong> P19</strong> </li>
+     <li class="list-group-item">Bairro: <strong> MONTE REALE</strong> - Prestadora:<strong> CAXIENSE</strong> - Linha: <strong> P20</strong> </li>
+     <li class="list-group-item">Bairro: <strong> PLANALTO (Via Aparecida - Quadra de Futsal)</strong> - Prestadora:<strong> CAXIENSE</strong> - Linha: <strong> P20</strong> </li>
+     <li class="list-group-item">Bairro: <strong> SÃO VICTOR COHAB</strong> - Prestadora:<strong> CAXIENSE</strong> - Linha: <strong> P20</strong> </li>
+     <li class="list-group-item">Bairro: <strong> LA PALOMA</strong> - Prestadora:<strong> CAXIENSE</strong> - Linha: <strong> P21</strong> </li>
+     <li class="list-group-item">Bairro: <strong> PAIQUERÊ</strong> - Prestadora:<strong> CAXIENSE</strong> - Linha: <strong> P21</strong> </li>
+     <li class="list-group-item">Bairro: <strong> SANVITTO</strong> - Prestadora:<strong> CAXIENSE</strong> - Linha: <strong> P21</strong> </li>
+     <li class="list-group-item">Bairro: <strong> VITÓRIA</strong> - Prestadora:<strong> CAXIENSE</strong> - Linha: <strong> P21</strong> </li>
+     <li class="list-group-item">Bairro: <strong> PLANALTO (Padaria Pão de Mel)</strong> - Prestadora:<strong> CAXIENSE</strong> - Linha: <strong> P22</strong> </li>
+     <li class="list-group-item">Bairro: <strong> VALE VERDE </strong> - Prestadora:<strong> CAXIENSE</strong> - Linha: <strong> P22</strong> </li>
+     <li class="list-group-item">Bairro: <strong> VILA VERDE</strong> - Prestadora:<strong> CAXIENSE</strong> - Linha: <strong> P22</strong> </li>
+     <li class="list-group-item">Bairro: <strong> BR 116</strong> - Prestadora:<strong> GIRATUR</strong> - Linha: <strong> P23</strong> </li>
+     <li class="list-group-item">Bairro: <strong> PLANALTO (Marcopolo PL - Colégio Guerino)</strong> - Prestadora:<strong> GIRATUR</strong> - Linha: <strong> P23</strong> </li>
+     <li class="list-group-item">Bairro: <strong> BELA VISTA</strong> - Prestadora:<strong> CAXIENSE</strong> - Linha: <strong> P24</strong> </li>
+     <li class="list-group-item">Bairro: <strong> VILA MARI</strong> - Prestadora:<strong> CAXIENSE</strong> - Linha: <strong> P24</strong> </li>
+     <li class="list-group-item">Bairro: <strong> MECATRONICA</strong> - Prestadora:<strong> GIRATUR</strong> - Linha: <strong> P25</strong> </li>
+     <li class="list-group-item">Bairro: <strong> PENA BRANCA</strong> - Prestadora:<strong> GIRATUR</strong> - Linha: <strong> P25</strong> </li>
+     <li class="list-group-item">Bairro: <strong> PETRÓPOLIS</strong> - Prestadora:<strong> GIRATUR</strong> - Linha: <strong> P25</strong> </li>
+     <li class="list-group-item">Bairro: <strong> SÃO LUIZ</strong> - Prestadora:<strong> GIRATUR</strong> - Linha: <strong> P25</strong> </li>
+     <li class="list-group-item">Bairro: <strong> SÃO VALENTIN (Cruzeiro)</strong> - Prestadora:<strong> GIRATUR</strong> - Linha: <strong> P25</strong> </li>
+     <li class="list-group-item">Bairro: <strong> UCS</strong> - Prestadora:<strong> CAXIENSE</strong> - Linha: <strong> P25</strong> </li>
+     <li class="list-group-item">Bairro: <strong> GAUCHINHA</strong> - Prestadora:<strong> CAXIENSE</strong> - Linha: <strong> P26</strong> </li>
+     <li class="list-group-item">Bairro: <strong> INTRAL</strong> - Prestadora:<strong> CAXIENSE</strong> - Linha: <strong> P26</strong> </li>
+     <li class="list-group-item">Bairro: <strong> KAISER</strong> - Prestadora:<strong> CAXIENSE</strong> - Linha: <strong> P26</strong> </li>
+     <li class="list-group-item">Bairro: <strong> JARDIM DAS HORTÊNCIAS</strong> - Prestadora:<strong> CAXIENSE</strong> - Linha: <strong> P27</strong> </li>
+     <li class="list-group-item">Bairro: <strong> MARILAND</strong> - Prestadora:<strong> CAXIENSE</strong> - Linha: <strong> P27</strong> </li>
+     <li class="list-group-item">Bairro: <strong> SAINT ETIENE</strong> - Prestadora:<strong> CAXIENSE</strong> - Linha: <strong> P27</strong> </li>
+     <li class="list-group-item">Bairro: <strong> SÃO CIRO I e II</strong> - Prestadora:<strong> CAXIENSE</strong> - Linha: <strong> P27</strong> </li>
+     <li class="list-group-item">Bairro: <strong> SÉCULO XX</strong> - Prestadora:<strong> CAXIENSE</strong> - Linha: <strong> P27</strong> </li>
+     <li class="list-group-item">Bairro: <strong> BOM PASTOR</strong> - Prestadora:<strong> CAXIENSE</strong> - Linha: <strong> P28</strong> </li>
+     <li class="list-group-item">Bairro: <strong> LOTEAMENTO ROTA NOVA</strong> - Prestadora:<strong> GIRATUR</strong> - Linha: <strong> P29</strong> </li>
+     <li class="list-group-item">Bairro: <strong> MATIODA</strong> - Prestadora:<strong> GIRATUR</strong> - Linha: <strong> P29</strong> </li>
+     <li class="list-group-item">Bairro: <strong> REOLON</strong> - Prestadora:<strong> GIRATUR</strong> - Linha: <strong> P29</strong> </li>
+     <li class="list-group-item">Bairro: <strong> TIJUCA</strong> - Prestadora:<strong> GIRATUR</strong> - Linha: <strong> P29</strong> </li>
+     <li class="list-group-item">Bairro: <strong> CARAVÁGIO</strong> - Prestadora:<strong> GIRATUR</strong> - Linha: <strong> P30</strong> </li>
+     <li class="list-group-item">Bairro: <strong> GLÓRIA</strong> - Prestadora:<strong> CAXIENSE</strong> - Linha: <strong> P30</strong> </li>
+     <li class="list-group-item">Bairro: <strong> NOSSA SENHORA DO CARAVAGGIO</strong> - Prestadora:<strong> GIRATUR</strong> - Linha: <strong> P30</strong> </li>
+     <li class="list-group-item">Bairro: <strong> SÃO MATEUS</strong> - Prestadora:<strong> GIRATUR</strong> - Linha: <strong> P30</strong> </li>
+     <li class="list-group-item">Bairro: <strong> VILA BRASIL</strong> - Prestadora:<strong> GIRATUR</strong> - Linha: <strong> P30</strong> </li>
+     <li class="list-group-item">Bairro: <strong> CIDADE NOVA</strong> - Prestadora:<strong> CAXIENSE</strong> - Linha: <strong> P31</strong> </li>
+     <li class="list-group-item">Bairro: <strong> MARIANI</strong> - Prestadora:<strong> CAXIENSE</strong> - Linha: <strong> P31</strong> </li>
+     <li class="list-group-item">Bairro: <strong> SEDE FUNDAÇÃO MARCOPOLO</strong> - Prestadora:<strong> CAXIENSE</strong> - Linha: <strong> P31</strong> </li>
+     <li class="list-group-item">Bairro: <strong> INTERLAGOS(Perimetral Norte)</strong> - Prestadora:<strong> CAXIENSE</strong> - Linha: <strong> P32</strong> </li>
+     <li class="list-group-item">Bairro: <strong> MAXI ATACADO</strong> - Prestadora:<strong> CAXIENSE</strong> - Linha: <strong> P32</strong> </li>
+     <li class="list-group-item">Bairro: <strong> PEDREIRA DO GUERRA</strong> - Prestadora:<strong> CAXIENSE</strong> - Linha: <strong> P32</strong> </li>
+     <li class="list-group-item">Bairro: <strong> PERIMETRAL NORTE</strong> - Prestadora:<strong> CAXIENSE</strong> - Linha: <strong> P32</strong> </li>
+     <li class="list-group-item">Bairro: <strong> SÃO JOSÉ</strong> - Prestadora:<strong> CAXIENSE</strong> - Linha: <strong> P32</strong> </li>
+     <li class="list-group-item">Bairro: <strong> CHARQUEADAS</strong> - Prestadora:<strong> CAXIENSE</strong> - Linha: <strong> P33</strong> </li>
+     <li class="list-group-item">Bairro: <strong> JARDIM DO SHOPING</strong> - Prestadora:<strong> CAXIENSE</strong> - Linha: <strong> P33</strong> </li>
+     <li class="list-group-item">Bairro: <strong> NOSSA SENHORA DO ROSARIO I e II</strong> - Prestadora:<strong> CAXIENSE</strong> - Linha: <strong> P33</strong> </li>
+     <li class="list-group-item">Bairro: <strong> PLANALTO RIO BRANCO</strong> - Prestadora:<strong> CAXIENSE</strong> - Linha: <strong> P33</strong> </li>
+     <li class="list-group-item">Bairro: <strong> ROSÁRIO I e II</strong> - Prestadora:<strong> CAXIENSE</strong> - Linha: <strong> P33</strong> </li>
+     <li class="list-group-item">Bairro: <strong> SÃO FRANCISCO</strong> - Prestadora:<strong> CAXIENSE</strong> - Linha: <strong> P33</strong> </li>
+     <li class="list-group-item">Bairro: <strong> SHOPING IGUATEMI</strong> - Prestadora:<strong> CAXIENSE</strong> - Linha: <strong> P33</strong> </li>
+     <li class="list-group-item">Bairro: <strong> VILA AMÉLIA</strong> - Prestadora:<strong> CAXIENSE</strong> - Linha: <strong> P33</strong> </li>
+     <li class="list-group-item">Bairro: <strong> CENTRO (Via 20 de Setembro)</strong> - Prestadora:<strong> CAXIENSE</strong> - Linha: <strong> P34</strong> </li>
+     <li class="list-group-item">Bairro: <strong> CINQUENTENÁRIO (Via Julio de Castilhos)</strong> - Prestadora:<strong> CAXIENSE</strong> - Linha: <strong> P34</strong> </li>
+     <li class="list-group-item">Bairro: <strong> FLORESTA</strong> - Prestadora:<strong> CAXIENSE</strong> - Linha: <strong> P34</strong> </li>
+     <li class="list-group-item">Bairro: <strong> HOSPITAL UNIMED</strong> - Prestadora:<strong> CAXIENSE</strong> - Linha: <strong> P34</strong> </li>
+     <li class="list-group-item">Bairro: <strong> I. E. E. CRISTOVÃO DE MENDOZA</strong> - Prestadora:<strong> CAXIENSE</strong> - Linha: <strong> P34</strong> </li>
+     <li class="list-group-item">Bairro: <strong> MARECHAL FLORIANO</strong> - Prestadora:<strong> CAXIENSE</strong> - Linha: <strong> P34</strong> </li>
+     <li class="list-group-item">Bairro: <strong> RIO BRANCO(Capuchinho)</strong> - Prestadora:<strong> CAXIENSE</strong> - Linha: <strong> P34</strong> </li>
+     <li class="list-group-item">Bairro: <strong> AEROPORTO</strong> - Prestadora:<strong> CAXIENSE</strong> - Linha: <strong> P35</strong> </li>
+     <li class="list-group-item">Bairro: <strong> MONTE CARMELO</strong> - Prestadora:<strong> CAXIENSE</strong> - Linha: <strong> P35</strong> </li>
+     <li class="list-group-item">Bairro: <strong> SALGADO FILHO</strong> - Prestadora:<strong> CAXIENSE</strong> - Linha: <strong> P35</strong> </li>
+     <li class="list-group-item">Bairro: <strong> ESPLANADA</strong> - Prestadora:<strong> CAXIENSE</strong> - Linha: <strong> P36</strong> </li>
+     <li class="list-group-item">Bairro: <strong> MONTES CLAROS</strong> - Prestadora:<strong> GIRATUR</strong> - Linha: <strong> P36</strong> </li>
+     <li class="list-group-item">Bairro: <strong> BRASÍLIA</strong> - Prestadora:<strong> CAXIENSE</strong> - Linha: <strong> P37</strong> </li>
+     <li class="list-group-item">Bairro: <strong> LOTEAMENTO BACHI</strong> - Prestadora:<strong> CAXIENSE</strong> - Linha: <strong> P37</strong> </li>
+     <li class="list-group-item">Bairro: <strong> PARADA CRISTAL</strong> - Prestadora:<strong> CAXIENSE</strong> - Linha: <strong> P37</strong> </li>
+     <li class="list-group-item">Bairro: <strong> SÃO VALENTIN (Parada Cristal)</strong> - Prestadora:<strong> CAXIENSE</strong> - Linha: <strong> P37</strong> </li>
+     <li class="list-group-item">Bairro: <strong> VILA ALPINA</strong> - Prestadora:<strong> CAXIENSE</strong> - Linha: <strong> P37</strong> </li>
+     <li class="list-group-item">Bairro: <strong> CASTELO</strong> - Prestadora:<strong> CAXIENSE</strong> - Linha: <strong> P38</strong> </li>
+     <li class="list-group-item">Bairro: <strong> SANTO HOMOBOM</strong> - Prestadora:<strong> CAXIENSE</strong> - Linha: <strong> P38</strong> </li>
+     <li class="list-group-item">Bairro: <strong> SÃO CRISTOVÃO</strong> - Prestadora:<strong> CAXIENSE</strong> - Linha: <strong> P38</strong> </li>
+     <li class="list-group-item">Bairro: <strong> ARCO BALENO</strong> - Prestadora:<strong> CAXIENSE</strong> - Linha: <strong> P39</strong> </li>
+     <li class="list-group-item">Bairro: <strong> SÃO CAETANO (Mobitec)</strong> - Prestadora:<strong> CAXIENSE</strong> - Linha: <strong> P40</strong> </li>
+     <li class="list-group-item">Bairro: <strong> SÃO CAETANO DO SUL</strong> - Prestadora:<strong> CAXIENSE</strong> - Linha: <strong> P40</strong> </li>
+     <li class="list-group-item">Bairro: <strong> 3ª LÉGUA</strong> - Prestadora:<strong> CAXIENSE</strong> - Linha: <strong> P41</strong> </li>
+     <li class="list-group-item">Bairro: <strong> NOSSA SENHORA DAS GRAÇAS</strong> - Prestadora:<strong> CAXIENSE</strong> - Linha: <strong> P41</strong> </li>
+     <li class="list-group-item">Bairro: <strong> ORIENTAL</strong> - Prestadora:<strong> CAXIENSE</strong> - Linha: <strong> P41</strong> </li>
+     <li class="list-group-item">Bairro: <strong> SANTA CORONA</strong> - Prestadora:<strong> CAXIENSE</strong> - Linha: <strong> P42</strong> </li>
+     <li class="list-group-item">Bairro: <strong> SANTOS DUMONT</strong> - Prestadora:<strong> CAXIENSE</strong> - Linha: <strong> P42</strong> </li>
+     <li class="list-group-item">Bairro: <strong> CRISTO REDENTOR</strong> - Prestadora:<strong> CAXIENSE</strong> - Linha: <strong> P43</strong> </li>
+     <li class="list-group-item">Bairro: <strong> EXPOSIÇÃO</strong> - Prestadora:<strong> CAXIENSE</strong> - Linha: <strong> P43</strong> </li>
+     <li class="list-group-item">Bairro: <strong> IPIRANGA</strong> - Prestadora:<strong> CAXIENSE</strong> - Linha: <strong> P43</strong> </li>
+     <li class="list-group-item">Bairro: <strong> PANAZZOLO</strong> - Prestadora:<strong> CAXIENSE</strong> - Linha: <strong> P43</strong> </li>
+     <li class="list-group-item">Bairro: <strong> RIO BRANCO(Baixo)</strong> - Prestadora:<strong> CAXIENSE</strong> - Linha: <strong> P43</strong> </li>
+     <li class="list-group-item">Bairro: <strong> SÃO LEOPOLDO</strong> - Prestadora:<strong> CAXIENSE</strong> - Linha: <strong> P43</strong> </li>
+     <li class="list-group-item">Bairro: <strong> MORADA DOS ALPES</strong> - Prestadora:<strong> CAXIENSE</strong> - Linha: <strong> P44</strong> </li>
+     <li class="list-group-item">Bairro: <strong> PARQUE OÁSIS (Via Bortolo Zanrosso)</strong> - Prestadora:<strong> CAXIENSE</strong> - Linha: <strong> P44</strong> </li>
+     <li class="list-group-item">Bairro: <strong> BRANDALISE</strong> - Prestadora:<strong> CAXIENSE</strong> - Linha: <strong> P45</strong> </li>
+     <li class="list-group-item">Bairro: <strong> COLINA DO SOL</strong> - Prestadora:<strong> CAXIENSE</strong> - Linha: <strong> P45</strong> </li>
+     <li class="list-group-item">Bairro: <strong> SANTA FÉ</strong> - Prestadora:<strong> CAXIENSE</strong> - Linha: <strong> P45</strong> </li>
+     <li class="list-group-item">Bairro: <strong> VENEZZA</strong> - Prestadora:<strong> CAXIENSE</strong> - Linha: <strong> P45</strong> </li>
+     <li class="list-group-item">Bairro: <strong> VILA MAESTRA (RS 122)</strong> - Prestadora:<strong> CAXIENSE</strong> - Linha: <strong> P45</strong> </li>
+     <li class="list-group-item">Bairro: <strong> BELO HORIZONTE</strong> - Prestadora:<strong> CAXIENSE</strong> - Linha: <strong> P46</strong> </li>
+     <li class="list-group-item">Bairro: <strong> PORTAL DA MAESTRA</strong> - Prestadora:<strong> CAXIENSE</strong> - Linha: <strong> P46</strong> </li>
+     <li class="list-group-item">Bairro: <strong> VILA IPÊ</strong> - Prestadora:<strong> CAXIENSE</strong> - Linha: <strong> P46</strong> </li>
+     <li class="list-group-item">Bairro: <strong> FÁTIMA</strong> - Prestadora:<strong> CAXIENSE</strong> - Linha: <strong> P47</strong> </li>
+     <li class="list-group-item">Bairro: <strong> INTERLAGOS(Via Domingos Chies - Danfoss)</strong> - Prestadora:<strong> CAXIENSE</strong> - Linha: <strong> P47</strong> </li>
+     <li class="list-group-item">Bairro: <strong> JARDIM ESMERALDA</strong> - Prestadora:<strong> CAXIENSE</strong> - Linha: <strong> P47</strong> </li>
+     <li class="list-group-item">Bairro: <strong> JARDIM IRACEMA I (Campo Canarinho e Mercado Duarte)</strong> - Prestadora:<strong> CAXIENSE</strong> - Linha: <strong> P48</strong> </li>
+     <li class="list-group-item">Bairro: <strong> SANTO ANTÔNIO</strong> - Prestadora:<strong> CAXIENSE</strong> - Linha: <strong> P48</strong> </li>
+     <li class="list-group-item">Bairro: <strong> SERRANO (Supermercado Andrezza)</strong> - Prestadora:<strong> CAXIENSE</strong> - Linha: <strong> P49</strong> </li>
+     <li class="list-group-item">Bairro: <strong> JARDIM ELDORADO</strong> - Prestadora:<strong> CAXIENSE</strong> - Linha: <strong> P50</strong> </li>
+     <li class="list-group-item">Bairro: <strong> SERRANO (Via Assis Mariani)</strong> - Prestadora:<strong> CAXIENSE</strong> - Linha: <strong> P50</strong> </li>
+     <li class="list-group-item">Bairro: <strong> SERRANO (Via Imobiliária Minetto - Igreja Católica)</strong> - Prestadora:<strong> CAXIENSE</strong> - Linha: <strong> P51</strong> </li>
+     <li class="list-group-item">Bairro: <strong> JARDIM IRACEMA II (Serraria e Sede Sindicato Metalúrgicos)</strong> - Prestadora:<strong> CAXIENSE</strong> - Linha: <strong> P52</strong> </li>
+     <li class="list-group-item">Bairro: <strong> LOTEAMENTO FILOMENA</strong> - Prestadora:<strong> CAXIENSE</strong> - Linha: <strong> P52</strong> </li>
+     <li class="list-group-item">Bairro: <strong> NOSSA SENHORA DAS DORES</strong> - Prestadora:<strong> CAXIENSE</strong> - Linha: <strong> P52</strong> </li>
+     <li class="list-group-item">Bairro: <strong> SEDE SINDICATO METALÚRGICO</strong> - Prestadora:<strong> CAXIENSE</strong> - Linha: <strong> P52</strong> </li>
+     <li class="list-group-item">Bairro: <strong> ALTOS DO SEMINÁRIO(ALTO)</strong> - Prestadora:<strong> CAXIENSE</strong> - Linha: <strong> P53</strong> </li>
+     <li class="list-group-item">Bairro: <strong> CENTENÁRIO</strong> - Prestadora:<strong> CAXIENSE</strong> - Linha: <strong> P53</strong> </li>
+     <li class="list-group-item">Bairro: <strong> JARDIM ITÁLIA</strong> - Prestadora:<strong> CAXIENSE</strong> - Linha: <strong> P53</strong> </li>
+     <li class="list-group-item">Bairro: <strong> NOSSA SENHORA DA SAÚDE</strong> - Prestadora:<strong> CAXIENSE</strong> - Linha: <strong> P53</strong> </li>
+     <li class="list-group-item">Bairro: <strong> PIONEIRO</strong> - Prestadora:<strong> CAXIENSE</strong> - Linha: <strong> P53</strong> </li>
+     <li class="list-group-item">Bairro: <strong> POR DO SOL</strong> - Prestadora:<strong> CAXIENSE</strong> - Linha: <strong> P53</strong> </li>
+     <li class="list-group-item">Bairro: <strong> VINHEDOS</strong> - Prestadora:<strong> CAXIENSE</strong> - Linha: <strong> P53</strong> </li>
+     <li class="list-group-item">Bairro: <strong> ANA RECH</strong> - Prestadora:<strong> CAXIENSE</strong> - Linha: <strong> P54</strong> </li>
+     <li class="list-group-item">Bairro: <strong> SOLAR DO PRADO</strong> - Prestadora:<strong> CAXIENSE</strong> - Linha: <strong> P54</strong> </li>
+     <li class="list-group-item">Bairro: <strong></strong> - Prestadora:<strong></strong> - Linha: <strong></strong> </li>
+     <li class="list-group-item">Bairro: <strong></strong> - Prestadora:<strong></strong> - Linha: <strong></strong> </li>
+     <li class="list-group-item">Bairro: <strong></strong> - Prestadora:<strong></strong> - Linha: <strong></strong> </li>
+     <li class="list-group-item">Bairro: <strong></strong> - Prestadora:<strong></strong> - Linha: <strong></strong> </li>
+     <li class="list-group-item">Bairro: <strong></strong> - Prestadora:<strong></strong> - Linha: <strong></strong> </li>
+     <li class="list-group-item">Bairro: <strong></strong> - Prestadora:<strong></strong> - Linha: <strong></strong> </li>
+     <li class="list-group-item">Bairro: <strong></strong> - Prestadora:<strong></strong> - Linha: <strong></strong> </li>
+     <li class="list-group-item">Bairro: <strong></strong> - Prestadora:<strong></strong> - Linha: <strong></strong> </li>
+     <li class="list-group-item">Bairro: <strong></strong> - Prestadora:<strong></strong> - Linha: <strong></strong> </li>     
+    </ul>
+   </div>
+    </div>
+    <div class="tab-pane fade" id="TerceiroTurno" role="tabpanel" aria-labelledby="TerceiroTurno-tab">
+     <h1 class="mt-5"></h1>
+   <div class="container">
+    <p>Escreva o nome do bairro de destino: - Por exemplo, "Centro"</p>
+    <input class="form-control" id="TerceiroTurnoInput" type="text" placeholder="Digite aqui..">
+    <br>
+    <ul class="list-group" id="TerceiroTurnoList">
+     <li class="list-group-item">Bairro: <strong>CARAVAGIO</strong> - Prestadora:<strong> GIRATUR</strong> - Linha: <strong> P01</strong> </li>
+     <li class="list-group-item">Bairro: <strong>MONTES CLAROS</strong> - Prestadora:<strong> GIRATUR</strong> - Linha: <strong> P01</strong> </li>
+     <li class="list-group-item">Bairro: <strong>NOSSA SENHORA DAS GRAÇAS</strong> - Prestadora:<strong> GIRATUR</strong> - Linha: <strong> P01</strong> </li>
+     <li class="list-group-item">Bairro: <strong>ORIENTAL</strong> - Prestadora:<strong> GIRATUR</strong> - Linha: <strong> P01</strong> </li>
+     <li class="list-group-item">Bairro: <strong>SALGADO FILHO</strong> - Prestadora:<strong> GIRATUR</strong> - Linha: <strong> P01</strong> </li>
+     <li class="list-group-item">Bairro: <strong>18 DO FORTE</strong> - Prestadora:<strong> GIRATUR</strong> - Linha: <strong> P02</strong> </li>
+     <li class="list-group-item">Bairro: <strong>CENTRO</strong> - Prestadora:<strong> GIRATUR</strong> - Linha: <strong> P02</strong> </li>
+     <li class="list-group-item">Bairro: <strong>GAUCHINHA</strong> - Prestadora:<strong> GIRATUR</strong> - Linha: <strong> P02</strong> </li>
+     <li class="list-group-item">Bairro: <strong>KAISER</strong> - Prestadora:<strong> GIRATUR</strong> - Linha: <strong> P02</strong> </li>
+     <li class="list-group-item">Bairro: <strong>RIO BRANCO</strong> - Prestadora:<strong> GIRATUR</strong> - Linha: <strong> P02</strong> </li>
+     <li class="list-group-item">Bairro: <strong>SAGRADA FAMÍLIA </strong> - Prestadora:<strong> GIRATUR</strong> - Linha: <strong> P02</strong> </li>
+     <li class="list-group-item">Bairro: <strong>CASTELO</strong> - Prestadora:<strong> GIRATUR</strong> - Linha: <strong> P03</strong> </li>
+     <li class="list-group-item">Bairro: <strong>JARDIM DAS HORTÊNCIAS</strong> - Prestadora:<strong> GIRATUR</strong> - Linha: <strong> P03</strong> </li>
+     <li class="list-group-item">Bairro: <strong>SÃO CIRO</strong> - Prestadora:<strong> GIRATUR</strong> - Linha: <strong> P03</strong> </li>
+     <li class="list-group-item">Bairro: <strong>SÃO CRISTOVÃO</strong> - Prestadora:<strong> GIRATUR</strong> - Linha: <strong> P03</strong> </li>
+     <li class="list-group-item">Bairro: <strong>SECULO XX</strong> - Prestadora:<strong> GIRATUR</strong> - Linha: <strong> P03</strong> </li>
+     <li class="list-group-item">Bairro: <strong>CHARQUEADAS</strong> - Prestadora:<strong> GIRATUR</strong> - Linha: <strong> P04</strong> </li>
+     <li class="list-group-item">Bairro: <strong>DESVIO RIZZO</strong> - Prestadora:<strong> GIRATUR</strong> - Linha: <strong> P04</strong> </li>
+     <li class="list-group-item">Bairro: <strong>PLANALTO RIO BRANCO</strong> - Prestadora:<strong> GIRATUR</strong> - Linha: <strong> P04</strong> </li>
+     <li class="list-group-item">Bairro: <strong>ROSÁRIO</strong> - Prestadora:<strong> GIRATUR</strong> - Linha: <strong> P04</strong> </li>
+     <li class="list-group-item">Bairro: <strong>SÃO FRANCISCO</strong> - Prestadora:<strong> GIRATUR</strong> - Linha: <strong> P04</strong> </li>
+     <li class="list-group-item">Bairro: <strong>CIDADE NOVA II</strong> - Prestadora:<strong> CAXIENSE</strong> - Linha: <strong> P05</strong> </li>
+     <li class="list-group-item">Bairro: <strong>INDUSTRIAL</strong> - Prestadora:<strong> CAXIENSE</strong> - Linha: <strong> P05</strong> </li>
+     <li class="list-group-item">Bairro: <strong>MARIANE</strong> - Prestadora:<strong> CAXIENSE</strong> - Linha: <strong> P05</strong> </li>
+     <li class="list-group-item">Bairro: <strong>PERIMETRAL - CASA DE PEDRA</strong> - Prestadora:<strong> CAXIENSE</strong> - Linha: <strong> P05</strong> </li>
+     <li class="list-group-item">Bairro: <strong>PERIMETRAL - MAX ATACADO</strong> - Prestadora:<strong> CAXIENSE</strong> - Linha: <strong> P05</strong> </li>
+     <li class="list-group-item">Bairro: <strong>ANA RECH</strong> - Prestadora:<strong> GIRATUR</strong> - Linha: <strong> P06</strong> </li>
+     <li class="list-group-item">Bairro: <strong>PARADA CRISTAL</strong> - Prestadora:<strong> GIRATUR</strong> - Linha: <strong> P06</strong> </li>
+     <li class="list-group-item">Bairro: <strong>SOLAR DO PRADO</strong> - Prestadora:<strong> GIRATUR</strong> - Linha: <strong> P06</strong> </li>
+     <li class="list-group-item">Bairro: <strong>BAIRRO SÃO LEOPOLDO</strong> - Prestadora:<strong> GIRATUR</strong> - Linha: <strong> P07</strong> </li>
+     <li class="list-group-item">Bairro: <strong>CRISTO REDENTOR</strong> - Prestadora:<strong> GIRATUR</strong> - Linha: <strong> P07</strong> </li>
+     <li class="list-group-item">Bairro: <strong>EXPOSIÇÃO</strong> - Prestadora:<strong> GIRATUR</strong> - Linha: <strong> P07</strong> </li>
+     <li class="list-group-item">Bairro: <strong>PANAZZOLO</strong> - Prestadora:<strong> GIRATUR</strong> - Linha: <strong> P07</strong> </li>
+     <li class="list-group-item">Bairro: <strong>CRUZEIRO</strong> - Prestadora:<strong> GIRATUR</strong> - Linha: <strong> P08</strong> </li>
+     <li class="list-group-item">Bairro: <strong>SÃO VIRGÍLIO</strong> - Prestadora:<strong> GIRATUR</strong> - Linha: <strong> P08</strong> </li>
+     <li class="list-group-item">Bairro: <strong>VILA LEON</strong> - Prestadora:<strong> GIRATUR</strong> - Linha: <strong> P08</strong> </li>
+     <li class="list-group-item">Bairro: <strong>FORQUETA</strong> - Prestadora:<strong> BRAGÉ</strong> - Linha: <strong> P09</strong> </li>
+     <li class="list-group-item">Bairro: <strong>PARQUE DAS ROSAS</strong> - Prestadora:<strong> BRAGÉ</strong> - Linha: <strong> P09</strong> </li>
+     <li class="list-group-item">Bairro: <strong>PIONEIRO</strong> - Prestadora:<strong> BRAGÉ</strong> - Linha: <strong> P09</strong> </li>
+     <li class="list-group-item">Bairro: <strong>SÃO LUCAS </strong> - Prestadora:<strong> BRAGÉ</strong> - Linha: <strong> P09</strong> </li>
+     <li class="list-group-item">Bairro: <strong>CENTENÁRIO </strong> - Prestadora:<strong> BRAGÉ</strong> - Linha: <strong> P10</strong> </li>
+     <li class="list-group-item">Bairro: <strong>COLINA SORRISO</strong> - Prestadora:<strong> BRAGÉ</strong> - Linha: <strong> P10</strong> </li>
+     <li class="list-group-item">Bairro: <strong>FÁTIMA</strong> - Prestadora:<strong> BRAGÉ</strong> - Linha: <strong> P10</strong> </li>
+     <li class="list-group-item">Bairro: <strong>MONTE BÉRICO</strong> - Prestadora:<strong> BRAGÉ</strong> - Linha: <strong> P10</strong> </li>
+     <li class="list-group-item">Bairro: <strong>NOSSA SENHORA DO ROSÁRIO</strong> - Prestadora:<strong> BRAGÉ</strong> - Linha: <strong> P10</strong> </li>
+     <li class="list-group-item">Bairro: <strong>PIONEIRO</strong> - Prestadora:<strong> BRAGÉ</strong> - Linha: <strong> P10</strong> </li>
+     <li class="list-group-item">Bairro: <strong>FÁTIMA</strong> - Prestadora:<strong> BRAGÉ</strong> - Linha: <strong> P11</strong> </li>
+     <li class="list-group-item">Bairro: <strong>MONTE BÉRICO</strong> - Prestadora:<strong> BRAGÉ</strong> - Linha: <strong> P11</strong> </li>
+     <li class="list-group-item">Bairro: <strong>NOSSA SENHORA DO ROSÁRIO</strong> - Prestadora:<strong> BRAGÉ</strong> - Linha: <strong> P11</strong> </li>
+     <li class="list-group-item">Bairro: <strong>PARQUE OASIS </strong> - Prestadora:<strong> BRAGÉ</strong> - Linha: <strong> P11</strong> </li>
+     <li class="list-group-item">Bairro: <strong>PIONEIRO</strong> - Prestadora:<strong> BRAGÉ</strong> - Linha: <strong> P11</strong> </li>
+     <li class="list-group-item">Bairro: <strong>POR DO SOL</strong> - Prestadora:<strong> BRAGÉ</strong> - Linha: <strong> P11</strong> </li>
+     <li class="list-group-item">Bairro: <strong>CENTRO (VINTE DE SETEMBRO)</strong> - Prestadora:<strong> BRAGÉ</strong> - Linha: <strong> P12</strong> </li>
+     <li class="list-group-item">Bairro: <strong>MARECHAL FLORIANO</strong> - Prestadora:<strong> BRAGÉ</strong> - Linha: <strong> P12</strong> </li>
+     <li class="list-group-item">Bairro: <strong>SAGRADA FAMÍLIA </strong> - Prestadora:<strong> BRAGÉ</strong> - Linha: <strong> P12</strong> </li>
+     <li class="list-group-item">Bairro: <strong>BELO HORIZONTE</strong> - Prestadora:<strong> BRAGÉ</strong> - Linha: <strong> P13</strong> </li>
+     <li class="list-group-item">Bairro: <strong>COLINA DO SOL</strong> - Prestadora:<strong> BRAGÉ</strong> - Linha: <strong> P13</strong> </li>
+     <li class="list-group-item">Bairro: <strong>PORTAL DA MAESTRA</strong> - Prestadora:<strong> BRAGÉ</strong> - Linha: <strong> P13</strong> </li>
+     <li class="list-group-item">Bairro: <strong>SANTA FÉ</strong> - Prestadora:<strong> BRAGÉ</strong> - Linha: <strong> P13</strong> </li>
+     <li class="list-group-item">Bairro: <strong>SANTO ANTONIO</strong> - Prestadora:<strong> BRAGÉ</strong> - Linha: <strong> P13</strong> </li>
+     <li class="list-group-item">Bairro: <strong>CAMPOS DA SERRA</strong> - Prestadora:<strong> UNIDOS</strong> - Linha: <strong> P14</strong> </li>
+     <li class="list-group-item">Bairro: <strong>DE ZORZI </strong> - Prestadora:<strong> UNIDOS</strong> - Linha: <strong> P14</strong> </li>
+     <li class="list-group-item">Bairro: <strong>DE ZORZI II</strong> - Prestadora:<strong> UNIDOS</strong> - Linha: <strong> P14</strong> </li>
+     <li class="list-group-item">Bairro: <strong>DIAMANTINO</strong> - Prestadora:<strong> UNIDOS</strong> - Linha: <strong> P14</strong> </li>
+     <li class="list-group-item">Bairro: <strong>PENA BRANCA</strong> - Prestadora:<strong> UNIDOS</strong> - Linha: <strong> P14</strong> </li>
+     <li class="list-group-item">Bairro: <strong>PRESIDENTE VARGAS</strong> - Prestadora:<strong> UNIDOS</strong> - Linha: <strong> P14</strong> </li>
+     <li class="list-group-item">Bairro: <strong>SÃO LUIZ DA 6ª LÉGUA</strong> - Prestadora:<strong> UNIDOS</strong> - Linha: <strong> P14</strong> </li>
+     <li class="list-group-item">Bairro: <strong>TREVISO</strong> - Prestadora:<strong> UNIDOS</strong> - Linha: <strong> P14</strong> </li>
+     <li class="list-group-item">Bairro: <strong>BELA VISTA</strong> - Prestadora:<strong> UNIDOS</strong> - Linha: <strong> P15</strong> </li>
+     <li class="list-group-item">Bairro: <strong>MONTE REALI</strong> - Prestadora:<strong> UNIDOS</strong> - Linha: <strong> P15</strong> </li>
+     <li class="list-group-item">Bairro: <strong>PAIQUERE</strong> - Prestadora:<strong> UNIDOS</strong> - Linha: <strong> P15</strong> </li>
+     <li class="list-group-item">Bairro: <strong>PLANALTO   </strong> - Prestadora:<strong> UNIDOS</strong> - Linha: <strong> P15</strong> </li>
+     <li class="list-group-item">Bairro: <strong>SÃO VITOR</strong> - Prestadora:<strong> UNIDOS</strong> - Linha: <strong> P15</strong> </li>
+     <li class="list-group-item">Bairro: <strong>VILA MARI</strong> - Prestadora:<strong> UNIDOS</strong> - Linha: <strong> P15</strong> </li>
+     <li class="list-group-item">Bairro: <strong>VITORIA</strong> - Prestadora:<strong> UNIDOS</strong> - Linha: <strong> P15</strong> </li>
+     <li class="list-group-item">Bairro: <strong>1º DE MAIO</strong> - Prestadora:<strong> GIRATUR</strong> - Linha: <strong> P16</strong> </li>
+     <li class="list-group-item">Bairro: <strong>JARDIM AMÉRICA</strong> - Prestadora:<strong> GIRATUR</strong> - Linha: <strong> P16</strong> </li>
+     <li class="list-group-item">Bairro: <strong>PIO X</strong> - Prestadora:<strong> GIRATUR</strong> - Linha: <strong> P16</strong> </li>
+     <li class="list-group-item">Bairro: <strong>SÃO JOSÉ</strong> - Prestadora:<strong> GIRATUR</strong> - Linha: <strong> P16</strong> </li>
+     <li class="list-group-item">Bairro: <strong>ELDORADO</strong> - Prestadora:<strong> CAXIENSE</strong> - Linha: <strong> P17</strong> </li>
+     <li class="list-group-item">Bairro: <strong>IRACEMA</strong> - Prestadora:<strong> CAXIENSE</strong> - Linha: <strong> P17</strong> </li>
+     <li class="list-group-item">Bairro: <strong>SERRANO</strong> - Prestadora:<strong> CAXIENSE</strong> - Linha: <strong> P17</strong> </li>
+     <li class="list-group-item">Bairro: <strong>4ª LÉGUA</strong> - Prestadora:<strong> GIRATUR</strong> - Linha: <strong> P18</strong> </li>
+     <li class="list-group-item">Bairro: <strong>ALTOS DE GALÓPOLIS</strong> - Prestadora:<strong> GIRATUR</strong> - Linha: <strong> P18</strong> </li>
+     <li class="list-group-item">Bairro: <strong>GALÓPOLIS</strong> - Prestadora:<strong> GIRATUR</strong> - Linha: <strong> P18</strong> </li>
+     <li class="list-group-item">Bairro: <strong>SANTA CORONA</strong> - Prestadora:<strong> GIRATUR</strong> - Linha: <strong> P18</strong> </li>
+     <li class="list-group-item">Bairro: <strong>SANTOS DUMONT</strong> - Prestadora:<strong> GIRATUR</strong> - Linha: <strong> P18</strong> </li>
+     <li class="list-group-item">Bairro: <strong>VILA LOBOS</strong> - Prestadora:<strong> GIRATUR</strong> - Linha: <strong> P18</strong> </li>
+     <li class="list-group-item">Bairro: <strong>ARCO BALENO</strong> - Prestadora:<strong> BRAGÉ</strong> - Linha: <strong> P19</strong> </li>
+     <li class="list-group-item">Bairro: <strong>BOM PASTOR</strong> - Prestadora:<strong> BRAGÉ</strong> - Linha: <strong> P19</strong> </li>
+     <li class="list-group-item">Bairro: <strong>SÃO CAETANO</strong> - Prestadora:<strong> BRAGÉ</strong> - Linha: <strong> P19</strong> </li>
+     <li class="list-group-item">Bairro: <strong>VILA VERDE</strong> - Prestadora:<strong> BRAGÉ</strong> - Linha: <strong> P19</strong> </li>     
+    </ul>
+   </div>
+    </div>
+  </div>
+   
+  </div>
+ </main>
+
+ <footer class="footer mt-auto py-3">
+  <div class="container">
+   <span class="text-muted">Visualizar no mapa</span>
+   <!-- Button trigger modal -->
+   <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+    Abrir
+   </button>
+  </div>
+ </footer>
+
+
+ <!-- Modal -->
+ <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="contato_modal"
+  aria-hidden="true">
+  <div class="modal-dialog" role="document">
+   <div class="modal-content">
+    <div class="modal-header">
+     <h5 class="modal-title" id="contato_modal">Fale Comigo!</h5>
+     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+      <span aria-hidden="true">&times;</span>
+     </button>
+    </div>
+    <div class="modal-body">
+     matheus.cabral@marcopolo.com.br - Ramal 4214
+    </div>
+    <div class="modal-footer">
+     <button type="button" class="btn btn-danger" data-dismiss="modal">Fechar</button>
+    </div>
+   </div>
+  </div>
+ </div>
+ <!-- diurno -->
+ <script>
+  $(document).ready(function () {
+   $("#DiurnoInput").on("keyup", function () {
+    var value = $(this).val().toLowerCase();
+    $("#diurnoList li").filter(function () {
+     $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+    });
+   });
+  });
+ </script>
+  <!-- noturno -->
+  <script>
+   $(document).ready(function () {
+    $("#NoturnoInput").on("keyup", function () {
+     var value = $(this).val().toLowerCase();
+     $("#NoturnoList li").filter(function () {
+      $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+     });
+    });
+   });
+  </script>
+   <!-- Terceiro Turno -->
+ <script>
+  $(document).ready(function () {
+   $("#TerceiroTurnoInput").on("keyup", function () {
+    var value = $(this).val().toLowerCase();
+    $("#TerceiroTurnoList li").filter(function () {
+     $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+    });
+   });
+  });
+ </script>
+ <script
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBqKPYXiV7BlP65rt4SbKmRHrCYAkqh7j0&libraries=places&callback=initMap"
+  async defer>
+  </script>
+ <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+  integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+  integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+ <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+  integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+
+</html>
