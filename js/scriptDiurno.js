@@ -1169,9 +1169,9 @@ function setMarkers(map, locations) {
 
   function handleLocationError(browserHasGeolocation, infoWindow, pos) {
     infoWindow.setPosition(pos);
-    infoWindow.setContent(browserHasGeolocation ?
-      'Falha ao buscar a localização atual, ligue o GPS' :
-      'Seu navegador não suporta geolocalização');
+    // infoWindow.setContent(browserHasGeolocation ?
+    //   'Falha ao buscar a localização atual, ligue o GPS' :
+    //   'Seu navegador não suporta geolocalização');
     infoWindow.open(map);
   }
 }
