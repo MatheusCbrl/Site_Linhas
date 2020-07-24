@@ -29,6 +29,8 @@
       }
 
       .pac-card {
+        flex-wrap: wrap;
+        justify-content: center;
         margin: 10px 10px 0 0;
         border-radius: 2px 0 0 2px;
         box-sizing: border-box;
@@ -58,12 +60,13 @@
       #pac-input {
         background-color: #fff;
         font-family: Roboto;
+        border-radius: 2px 0 0 2px;
         font-size: 15px;
         font-weight: 300;
         margin-left: 12px;
         padding: 0 11px 0 13px;
         text-overflow: ellipsis;
-        width: 400px;
+        width: 300px;
       }
 
       #pac-input:focus {

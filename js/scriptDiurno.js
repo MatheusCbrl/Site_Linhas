@@ -1009,7 +1009,13 @@ function initMap() {
   var map = new google.maps.Map(document.getElementById('map'), {
     center: { lat: -29.1684796, lng: -51.1793861 },
     zoom: 13,
-    
+    mapTypeControl: true,
+    mapTypeControlOptions: {
+      style: google.maps.MapTypeControlStyle.DEFAULT,
+      position: google.maps.ControlPosition.RIGHT_CENTER
+    },
+    scaleControl: true,
+    gestureHandling: 'cooperative' 
   });
   infoWindow = new google.maps.InfoWindow;
   setMarkers(map, locations)
@@ -1114,6 +1120,7 @@ function setMarkers(map, locations) {
     var marker = new google.maps.Marker({
       map: map, title: loan, position: latlngset
     });
+    
     map.setCenter(marker.getPosition())
 
     const contentString =

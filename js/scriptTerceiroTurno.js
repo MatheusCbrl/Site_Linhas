@@ -215,7 +215,14 @@ function initMap() {
        elementType: "labels.text.stroke",
        stylers: [{ color: "#17263c" }]
      }
-   ]
+   ],
+   mapTypeControl: true,
+   mapTypeControlOptions: {
+     style: google.maps.MapTypeControlStyle.DEFAULT,
+     position: google.maps.ControlPosition.RIGHT_CENTER
+   },
+   scaleControl: true, 
+   gestureHandling: 'cooperative' 
  });
  infoWindow = new google.maps.InfoWindow;
  setMarkers(map, locations)
