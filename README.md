@@ -1,8 +1,6 @@
 # Google Maps Geolocation Example
 
-A simple example on how to track user position with [Geolocation API](https://developer.mozilla.org/en-US/docs/Web/API/Geolocation/Using_geolocation) and display it on a map with [Google Maps Javascript API](https://developers.google.com/maps/documentation/javascript/). Checkout the demo [here](https://google-maps-geolocation.bitballoon.com/).
-
-![Google Maps Geolocation Example](https://media.giphy.com/media/k8aLET8SuIQs5AuXWT/source.gif)
+A simple example on how to track user position with [Geolocation API](https://developer.mozilla.org/en-US/docs/Web/API/Geolocation/Using_geolocation) and display it on a map with [Google Maps Javascript API](https://developers.google.com/maps/documentation/javascript/). Checkout the demo [here](https://marcopolo-consulta-linhas.vercel.app/).
 
 ## Installation
 
