@@ -222,7 +222,6 @@ function initMap() {
      position: google.maps.ControlPosition.RIGHT_CENTER
    },
    scaleControl: true, 
-   gestureHandling: 'cooperative' 
  });
  infoWindow = new google.maps.InfoWindow;
  setMarkers(map, locations)
