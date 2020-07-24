@@ -218,7 +218,7 @@ function initMap() {
    ],
    mapTypeControl: true,
    mapTypeControlOptions: {
-     style: google.maps.MapTypeControlStyle.DEFAULT,
+     style: google.maps.MapTypeControlStyle.DROPDOWN_MENU,
      position: google.maps.ControlPosition.RIGHT_CENTER
    },
    scaleControl: true, 
