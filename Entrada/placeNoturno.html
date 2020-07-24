@@ -5,30 +5,27 @@
   <title>Paradas diurno</title>
   <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
   <meta charset="utf-8">
-  <link href="css/styles.css" rel="stylesheet">
+  <link href="../css/styles.css" rel="stylesheet">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <a class="navbar-brand" href="index.html">BusLine - Mapas</a>
-    <button class="navbar-toggler collapsed" type="button" data-toggle="collapse"
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark"><a class="navbar-brand" href="../index.html">BusLine -
+      Mapas</a><button class="navbar-toggler collapsed" type="button" data-toggle="collapse"
       data-target="#conteudoNavbarSuportado" aria-controls="conteudoNavbarSuportado" aria-expanded="false"
-      aria-label="Alterna navegação">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+      aria-label="Alterna navegação"><span class="navbar-toggler-icon"></span></button>
     <div class="navbar-collapse collapse" id="conteudoNavbarSuportado">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             Linhas de Entrada
           </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLinkSaida">
-            <a class="dropdown-item" href="index.html">Diurno</a>
-            <a class="dropdown-item" href="Entrada/placeNoturno.html">Noturno</a>
-            <a class="dropdown-item" href="Entrada/placeTerceiroNoturno.html">Terceiro Turno</a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="../index.html">Diurno</a>
+            <a class="dropdown-item" href="placeNoturno.html">Noturno</a>
+            <a class="dropdown-item" href="placeTerceiroNoturno.html">Terceiro Turno</a>
           </div>
         </li>
         <!-- <li class="nav-item"><a class="nav-link" href="index.html">Diurno</a></li>
@@ -39,12 +36,13 @@
             Linhas de Entrada
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLinkSaida">
-            <a class="dropdown-item" href="Saída/linhasSaidaDiurno.html">Diurno</a>
-            <a class="dropdown-item" href="Saída/linhasSaidaNoturno.html">Noturno</a>
-            <a class="dropdown-item" href="Saída/linhasSaidaTerceiroTurno.html">Terceiro Turno</a>
+            <a class="dropdown-item" href="../Saída/linhasSaidaDiurno.html">Diurno</a>
+            <a class="dropdown-item" href="../Saída/linhasSaidaNoturno.html">Noturno</a>
+            <a class="dropdown-item" href="../Saída/linhasSaidaTerceiroTurno.html">Terceiro Turno</a>
           </div>
         </li>
-        <li class="nav-item"><a class="nav-link" href="contato.html">Contatos</a></li>
+        
+        <li class="nav-item"><a class="nav-link" href="../contato.html">Contatos</a></li>
         
       </ul>
     </div>
@@ -66,7 +64,7 @@
       </div>
       <!-- <div id="strict-bounds-selector" class="pac-controls">
           <input type="radio" name="type" id="changetype-geocode">
-           <label for="changetype-geocode">Coordenadas</label>
+          <label for="changetype-geocode">Coordenadas</label>
           <input type="checkbox" id="use-strict-bounds" value="">
           <label for="use-strict-bounds">Strict Bounds</label>
         </div> -->
@@ -81,7 +79,7 @@
     <span id="place-name" class="title"></span><br>
     <span id="place-address"></span>
   </div>
-  <script src="js/scriptDiurno.js"></script>
+  <script src="../js/scriptNoturno.js"></script>
   <script
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBqKPYXiV7BlP65rt4SbKmRHrCYAkqh7j0&libraries=places&callback=initMap"
     async defer>
