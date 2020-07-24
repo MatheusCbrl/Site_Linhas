@@ -890,8 +890,8 @@ function setMarkers(map, locations) {
   function handleLocationError(browserHasGeolocation, infoWindow, pos) {
   infoWindow.setPosition(pos);
   infoWindow.setContent(browserHasGeolocation ?
-                        'Error: The Geolocation service failed.' :
-                        'Error: Your browser doesn\'t support geolocation.');
+    'Error: Falha ao buscar a localização atual, ligue o GPS' :
+    'Error: Seu navegador não suporta geolocalização');
   infoWindow.open(map);
 }
 }
