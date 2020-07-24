@@ -2,6 +2,7 @@
 // parameter when you first load the API. For example:
 // <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&libraries=places">
 var map, infoWindow;
+var showInfoWindow = false;
 var locations = [
   ['Linha: L001', -29.1541338, -51.1439708, 'Bragé', 'Aguardar o transporte a partir de: 6:45:00'],
   ['Linha: L001', -29.1549232, -51.1468172, 'Bragé', 'Aguardar o transporte a partir de: 6:45:00'],
@@ -1105,8 +1106,9 @@ function initMap() {
 }
 
 function setMarkers(map, locations) {
-
+  var markers = new Array();
   var marker, i
+  var infowindow = new google.maps.InfoWindow();
 
   for (i = 0; i < locations.length; i++) {
 
@@ -1119,10 +1121,10 @@ function setMarkers(map, locations) {
     latlngset = new google.maps.LatLng(lat, long);
 
     var marker = new google.maps.Marker({
-      map: map, title: loan, position: latlngset
+      map: map, 
+      title: loan, 
+      position: latlngset
     });
-
-    map.setCenter(marker.getPosition())
 
     const contentString =
       '<div id="content">' +
@@ -1135,15 +1137,23 @@ function setMarkers(map, locations) {
     var content = contentString
     // loan +' ' + add
 
-    var infowindow = new google.maps.InfoWindow()
-
     google.maps.event.addListener(marker, 'click', (function (marker, content, infowindow) {
       return function () {
         infowindow.setContent(content);
         infowindow.open(map, marker);
-      };
+        map.setCenter(marker.getPosition());
+      }
     })(marker, content, infowindow));
+    // Add marker to markers array
+    markers.push(marker);
 
+     // Trigger a click event on each marker when the corresponding marker link is clicked
+     $('.marker-link').on('click', function () {
+
+      google.maps.event.trigger(markers[$(this).data('markerid')], 'click');
+  });
+
+    
   }
   //Try HTML5 geolocation.
 
@@ -1155,9 +1165,9 @@ function setMarkers(map, locations) {
       };
 
       infoWindow.setPosition(pos);
-      infoWindow.setContent('Localização Atual.');
+      infoWindow.setContent('Localização Atual');
       infoWindow.open(map);
-      maps.setCenter(pos);
+      map.setCenter(pos);
     }, function () {
       handleLocationError(true, infoWindow, map.getCenter());
       infowindow.close();
@@ -1169,9 +1179,9 @@ function setMarkers(map, locations) {
 
   function handleLocationError(browserHasGeolocation, infoWindow, pos) {
     infoWindow.setPosition(pos);
-     infoWindow.setContent(browserHasGeolocation ?
-       'Falha ao buscar a localização atual, ligue o GPS' :
-       'Seu navegador não suporta geolocalização');
+    infoWindow.setContent(browserHasGeolocation ?
+      'Falha ao buscar a localização atual, ligue o GPS' :
+      'Seu navegador não suporta geolocalização');
     infoWindow.open(map);
   }
 }

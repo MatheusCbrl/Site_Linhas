@@ -311,7 +311,9 @@ function initMap() {
 
 function setMarkers(map, locations) {
 
- var marker, i
+  var markers = new Array();
+  var marker, i
+  var infowindow = new google.maps.InfoWindow();
 
  for (i = 0; i < locations.length; i++) {
 
@@ -339,14 +341,21 @@ function setMarkers(map, locations) {
    var content = contentString 
    // loan +' ' + add
 
-   var infowindow = new google.maps.InfoWindow()
+    google.maps.event.addListener(marker, 'click', (function (marker, content, infowindow) {
+      return function () {
+        infowindow.setContent(content);
+        infowindow.open(map, marker);
+        map.setCenter(marker.getPosition());
+      }
+    })(marker, content, infowindow));
+    // Add marker to markers array
+    markers.push(marker);
 
-   google.maps.event.addListener(marker, 'click', (function (marker, content, infowindow) {
-     return function () {
-       infowindow.setContent(content);
-       infowindow.open(map, marker);
-     };
-   })(marker, content, infowindow));
+    // Trigger a click event on each marker when the corresponding marker link is clicked
+    $('.marker-link').on('click', function () {
+
+      google.maps.event.trigger(markers[$(this).data('markerid')], 'click');
+  });
 
  }
 
@@ -360,9 +369,9 @@ function setMarkers(map, locations) {
       };
   
       infoWindow.setPosition(pos);
-      infoWindow.setContent('Localização Atual.');
+      infoWindow.setContent('Localização Atual');
       infoWindow.open(map);
-      maps.setCenter(pos);
+      map.setCenter(pos);
     }, function() {
       handleLocationError(true, infoWindow, map.getCenter());
       infowindow.close();
