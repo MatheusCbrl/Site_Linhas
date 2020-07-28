@@ -248,9 +248,15 @@ function initMap() {
  var infowindowContent = document.getElementById('infowindow-content');
  infowindow.setContent(infowindowContent);
  var marker = new google.maps.Marker({
-   map: map,
-   anchorPoint: new google.maps.Point(0, -29)
- });
+  animation: google.maps.Animation.DROP,
+  map: map,
+  icon: {
+    path: google.maps.SymbolPath.BACKWARD_CLOSED_ARROW,
+    strokeColor: "orange",
+    scale: 6
+},
+  anchorPoint: new google.maps.Point(0, -29)
+});
 
  autocomplete.addListener('place_changed', function () {
    infowindow.close();

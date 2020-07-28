@@ -1043,8 +1043,15 @@ function initMap() {
   var infowindow = new google.maps.InfoWindow();
   var infowindowContent = document.getElementById('infowindow-content');
   infowindow.setContent(infowindowContent);
+
   var marker = new google.maps.Marker({
+    animation: google.maps.Animation.DROP,
     map: map,
+    icon: {
+      path: google.maps.SymbolPath.BACKWARD_CLOSED_ARROW,
+      strokeColor: "orange",
+      scale: 6
+  },
     anchorPoint: new google.maps.Point(0, -29)
   });
 
@@ -1121,6 +1128,7 @@ function setMarkers(map, locations) {
     latlngset = new google.maps.LatLng(lat, long);
 
     var marker = new google.maps.Marker({
+      
       map: map, 
       title: loan, 
       position: latlngset
