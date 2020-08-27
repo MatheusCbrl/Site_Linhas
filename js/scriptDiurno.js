@@ -1142,6 +1142,9 @@ function setMarkers(map, locations) {
       '<h6 id="firstHeading" class="firstHeading">' + loan + ' - ' + pre + '</h6>' +
       '<div id="bodyContent">' +
       '<p><b>' + add + '</b>' +
+      '<div id="siteNotice">' +
+      '<a href="'+ button +'"> Abrir no Google Maps</a>' + 
+      '</div>' +
       '</div>';
     var content = contentString
     // loan +' ' + add
