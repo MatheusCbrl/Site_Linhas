@@ -2,89 +2,103 @@
 <html lang="pt-BR">
 
 <head>
-  <title>Paradas diurno</title>
+  <title>BusLine</title>
   <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
   <meta charset="utf-8">
-  <link href="css/styles.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link href="css/contato.css" rel="stylesheet">
+   <!-- Bootstrap CSS -->
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 
 </head>
 
-<body>
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <a class="navbar-brand" href="index.html">BusLine - Mapas</a>
-    <button class="navbar-toggler collapsed" type="button" data-toggle="collapse"
-      data-target="#conteudoNavbarSuportado" aria-controls="conteudoNavbarSuportado" aria-expanded="false"
-      aria-label="Alterna navegação">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    
+<body >
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark"><a class="navbar-brand" href="index.html">BusLine</a><button class="navbar-toggler collapsed" type="button" data-toggle="collapse"
+      data-target="#conteudoNavbarSuportado" aria-controls="conteudoNavbarSuportado" aria-expanded="true"
+      aria-label="Alterna navegação"><span class="navbar-toggler-icon"></span></button>
     <div class="navbar-collapse collapse" id="conteudoNavbarSuportado">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Linhas de Entrada
+            Marcopolo Ana Rech
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLinkSaida">
-            <a class="dropdown-item" href="index.html">Diurno</a>
+            <div class="dropdown-divider"></div>
+            <h5 class="dropdown-header">Linhas de Entrada</h5>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="Entrada/placeDiurno.html">Diurno</a>
             <a class="dropdown-item" href="Entrada/placeNoturno.html">Noturno</a>
             <a class="dropdown-item" href="Entrada/placeTerceiroNoturno.html">Terceiro Turno</a>
-          </div>
-        </li>
-        <!-- <li class="nav-item"><a class="nav-link" href="index.html">Diurno</a></li>
-        <li class="nav-item"><a class="nav-link" href="placeNoturno.html">Noturno</a></li>
-        <li class="nav-item"><a class="nav-link" href="placeTerceiroNoturno.html">Terceiro Turno</a></li> -->
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLinkSaida" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Linhas de Saída
-          </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLinkSaida">
+            <div class="dropdown-divider"></div>
+            <h5 class="dropdown-header">Linhas de Saída</h5>
+            <div class="dropdown-divider"></div>
             <a class="dropdown-item" href="Saída/linhasSaidaDiurno.html">Diurno</a>
             <a class="dropdown-item" href="Saída/linhasSaidaNoturno.html">Noturno</a>
             <a class="dropdown-item" href="Saída/linhasSaidaTerceiroTurno.html">Terceiro Turno</a>
+            <div class="dropdown-divider"></div>
+            <h5 class="dropdown-header">Contatos</h5>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="contato.html">Contatos</a>
           </div>
         </li>
-        <li class="nav-item"><a class="nav-link" href="contato.html">Contatos</a></li>
-       
-        
+        <!-- <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLinkSaida" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            NeoBus
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLinkSaida">
+            <div class="dropdown-divider"></div>
+            <h5 class="dropdown-header">Linhas de Entrada</h5>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="Entrada/placeDiurno.html">Diurno</a>
+            <a class="dropdown-item" href="Entrada/placeNoturno.html">Noturno</a>
+            <a class="dropdown-item" href="Entrada/placeTerceiroNoturno.html">Terceiro Turno</a>
+            <div class="dropdown-divider"></div>
+            <h5 class="dropdown-header">Linhas de Saída</h5>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="Saída/linhasSaidaDiurno.html">Diurno</a>
+            <a class="dropdown-item" href="Saída/linhasSaidaNoturno.html">Noturno</a>
+            <a class="dropdown-item" href="Saída/linhasSaidaTerceiroTurno.html">Terceiro Turno</a>
+            <div class="dropdown-divider"></div>
+            <h5 class="dropdown-header">Contatos</h5>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="contato.html">Contatos</a>
+          </div>
+        </li> -->
+        <li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
       </ul>
+      <img class="card-img-top"style="max-width: 8.5rem" src="img/Marcopolo_H_negativo.png" alt="Imagem de capa do card">
     </div>
   </nav>
-  <div id="map"></div>
-  <div class="pac-card" id="pac-card">
-    <div>
-      <div id="title">
-        Outro Lugar?
+  <div class="jumbotron">
+    <h1>Mais uma novidade para o colaborador!</h1>
+    <blockquote class="blockquote">
+      <p>Saiba aonde e quando chegar na parada de ônibus para vir ao trabalho.</p>
+      <footer class="blockquote-footer">BusLine App.</footer>
+    </blockquote>
+  </div>
+  <footer class="footer mt-auto py-3">
+    <div class="container">
+  <div class="card-columns">
+    <div class="card bg-warning">
+      <div class="card-body text-center">
+        <img class="card-img-top" src="img/Marcopolo_H_negativo.png" alt="Card image" style="width:100%">
+        <p class="card-text">Encontre a parada mais próxima de você!</p>
       </div>
-      <div id="type-selector" class="pac-controls">
-        <input type="radio" name="type" id="changetype-all" checked="checked">
-        <label for="changetype-all">Tudo</label>
-
-        <input type="radio" name="type" id="changetype-establishment">
-        <label for="changetype-establishment">Estabelecimentos</label>
-
-        <input type="radio" name="type" id="changetype-address">
-        <label for="changetype-address">Endereços</label>
-      </div>
-      <!-- <div id="strict-bounds-selector" class="pac-controls">
-          <input type="radio" name="type" id="changetype-geocode">
-           <label for="changetype-geocode">Coordenadas</label>
-          <input type="checkbox" id="use-strict-bounds" value="">
-          <label for="use-strict-bounds">Strict Bounds</label>
-        </div> -->
     </div>
-    <div id="pac-container">
-      <input id="pac-input" type="text" placeholder="Digite sua busca">
+    <div class="card bg-warning">
+      <div class="card-body text-center">
+        <img class="card-img-top" src="img/Marcopolo_H_negativo.png" alt="Card image" style="width:100%">
+        <p class="card-text">Descubra qual linha pegar na hora de voltar para casa!</p>
+      </div>
+    </div>
+    <div class="card bg-warning">
+      <div class="card-body text-center">
+        <img class="card-img-top" src="img/Marcopolo_H_negativo.png" alt="Card image" style="width:100%">
+        <p class="card-text">Robusto porém, simples! </p>
+      </div>
     </div>
   </div>
-  
-  <div id="infowindow-content">
-    <img src="" width="16" height="16" id="place-icon">
-    <span id="place-name" class="title"></span><br>
-    <span id="place-address"></span>
-  </div>
-  <script src="js/scriptDiurno.js"></script>
+</div>
+</footer>
   <script
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBqKPYXiV7BlP65rt4SbKmRHrCYAkqh7j0&libraries=places&callback=initMap"
     async defer>
