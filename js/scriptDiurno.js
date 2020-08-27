@@ -427,7 +427,7 @@ var locations = [
 ['Linha: L033',-29.1132916,-51.08825,'Caxiense', 'Aguardar o transporte a partir de: 6:10:00'],
 ['Linha: L033',-29.1131349,-51.0903039,'Caxiense', 'Aguardar o transporte a partir de: 6:10:00'],
 ['Linha: L033',-29.1127643,-51.0920747,'Caxiense', 'Aguardar o transporte a partir de: 6:10:00'],
-['Linha: L033',-29.1213348,-51.1002003,'Caxiense', 'Aguardar o transporte a partir de: 6:10:00'],
+['Linha: L033',-29.1213348,-51.1002003,'Caxiense', 'Aguardar o transporte a partir de: 6:10:00', 'Linhas/Diurno/L033.html'],
 ['Linha: L033',-29.120432,-51.0995152,'Caxiense', 'Aguardar o transporte a partir de: 6:10:00'],
 ['Linha: L034',-29.1373094,-50.9802496,'Caxiense', 'Aguardar o transporte a partir de: 6:15:00'],
 ['Linha: L034',-29.1247511,-51.0078415,'Caxiense', 'Aguardar o transporte a partir de: 6:15:00'],
@@ -1124,6 +1124,8 @@ function setMarkers(map, locations) {
     var long = locations[i][2]
     var pre = locations[i][3]
     var add = locations[i][4]
+    var linhas = locations[i][5]
+    
 
     latlngset = new google.maps.LatLng(lat, long);
 
@@ -1133,7 +1135,8 @@ function setMarkers(map, locations) {
       title: loan, 
       position: latlngset
     });
-    var button = ("https://www.google.com/maps/search/?api=1&query=" +lat+","+ long)
+    var OpenGM = ("https://www.google.com/maps/search/?api=1&query=" +lat+","+ long)
+    var Direction = ("https://www.google.com/maps/dir/?api=1&query=&destination="+ lat + long +"&travelmode=walking")
 
     const contentString =
       '<div id="content">' +
@@ -1141,9 +1144,10 @@ function setMarkers(map, locations) {
       '</div>' +
       '<h6 id="firstHeading" class="firstHeading">' + loan + ' - ' + pre + '</h6>' +
       '<div id="bodyContent">' +
-      '<p><b>' + add + '</b>' +
+      '<p>' + add + '</p>' +
       '<div id="siteNotice">' +
-      '<a href="'+ button +'"> Abrir no Google Maps</a>' + 
+      '<a href="'+ OpenGM +'"> Abrir no Google Maps</a>' + '<a> / </a>' +
+      '<a href="' + Direction +'"> Rotas (Como Chegar)</a>' +
       '</div>' +
       '</div>';
     var content = contentString

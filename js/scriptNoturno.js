@@ -165,6 +165,8 @@ var locations = [
   ['Linha: L014',-29.1153154,-51.1347236,'Caxiense', 'Aguardar o transporte a partir de: 16:30:00'],
   ['Linha: L014',-29.1152123,-51.1318537,'Caxiense', 'Aguardar o transporte a partir de: 16:30:00'],
   ['Linha: L014',-29.1139621,-51.1314419,'Caxiense', 'Aguardar o transporte a partir de: 16:30:00'],
+  ['Linha: L015',-29.1611488,-51.2083736,'Caxiense', 'Aguardar o transporte a partir de: 15:50:00'],
+  ['Linha: L015',-29.1629181,-51.2228424,'Caxiense', 'Aguardar o transporte a partir de: 15:50:00'],
   ['Linha: L015',-29.1654724,-51.2244591,'Caxiense', 'Aguardar o transporte a partir de: 15:50:00'],
   ['Linha: L015',-29.1667381,-51.2257675,'Caxiense', 'Aguardar o transporte a partir de: 15:50:00'],
   ['Linha: L015',-29.167603,-51.2265238,'Caxiense', 'Aguardar o transporte a partir de: 15:50:00'],
@@ -181,6 +183,14 @@ var locations = [
   ['Linha: L016',-29.1611488,-51.2083736,'Caxiense', 'Aguardar o transporte a partir de: 15:50:00'],
   ['Linha: L016',-29.1629181,-51.2228424,'Caxiense', 'Aguardar o transporte a partir de: 15:50:00'],
   ['Linha: L016',-29.1670028,-51.225974,'Caxiense', 'Aguardar o transporte a partir de: 15:50:00'],
+  ['Linha: L016',-29.1685494,-51.2249209,'Caxiense', 'Aguardar o transporte a partir de: 15:50:00'],
+  ['Linha: L016',-29.1688318,-51.2222115,'Caxiense', 'Aguardar o transporte a partir de: 15:50:00'],
+  ['Linha: L016',-29.169249,-51.220602,'Caxiense', 'Aguardar o transporte a partir de: 15:50:00'],
+  ['Linha: L016',-29.1705959,-51.2309685,'Caxiense', 'Aguardar o transporte a partir de: 15:50:00'],
+  ['Linha: L016',-29.171269,-51.2349677,'Caxiense', 'Aguardar o transporte a partir de: 15:50:00'],
+  ['Linha: L016',-29.1734239,-51.2352387,'Caxiense', 'Aguardar o transporte a partir de: 15:50:00'],
+  ['Linha: L016',-29.173677,-51.2481455,'Caxiense', 'Aguardar o transporte a partir de: 15:50:00'],
+  ['Linha: L016',-29.1742538,-51.2508126,'Caxiense', 'Aguardar o transporte a partir de: 15:50:00'],
   ['Linha: L016',-29.1756725,-51.2508006,'Caxiense', 'Aguardar o transporte a partir de: 15:50:00'],
   ['Linha: L017',-29.1886137,-51.2138456,'Caxiense', 'Aguardar o transporte a partir de: 16:15:00'],
   ['Linha: L017',-29.186909,-51.213698,'Caxiense', 'Aguardar o transporte a partir de: 16:15:00'],
@@ -853,21 +863,23 @@ function setMarkers(map, locations) {
       map: map, title: loan, position: latlngset
     });
     map.setCenter(marker.getPosition())
-    
-    var button = ("https://www.google.com/maps/search/?api=1&query=" +lat+","+ long)
-    
+
+    var OpenGM = ("https://www.google.com/maps/search/?api=1&query=" +lat+","+ long)
+    var Direction = ("https://www.google.com/maps/dir/?api=1&query=&destination="+ lat + long +"&travelmode=walking")
+
     const contentString =
-    '<div id="content">' +
-    '<div id="siteNotice">' +
-    '</div>' +
-    '<h6 id="firstHeading" class="firstHeading">' +loan + ' - ' + pre +'</h6>' +
-    '<div id="bodyContent">' +
-    '<p><b>' + add + '</b>' +
-     '<div id="siteNotice">' +
-     '<a href="'+ button +'"> Abrir no Google Maps</a>' + 
-     '</div>' +
-    '</div>';
-    var content = contentString 
+      '<div id="content">' +
+      '<div id="siteNotice">' +
+      '</div>' +
+      '<h6 id="firstHeading" class="firstHeading">' + loan + ' - ' + pre + '</h6>' +
+      '<div id="bodyContent">' +
+      '<p>' + add + '</p>' +
+      '<div id="siteNotice">' +
+      '<a href="'+ OpenGM +'"> Abrir no Google Maps</a>' + '<a> / </a>' +
+      '<a href="' + Direction +'"> Rotas (Como Chegar)</a>' +
+      '</div>' +
+      '</div>';
+    var content = contentString
     // loan +' ' + add
 
     google.maps.event.addListener(marker, 'click', (function (marker, content, infowindow) {

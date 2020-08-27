@@ -335,21 +335,22 @@ function setMarkers(map, locations) {
      map: map, title: loan, position: latlngset
    });
    map.setCenter(marker.getPosition())
-   
-   var button = ("https://www.google.com/maps/search/?api=1&query=" +lat+","+ long)
+   var OpenGM = ("https://www.google.com/maps/search/?api=1&query=" +lat+","+ long)
+    var Direction = ("https://www.google.com/maps/dir/?api=1&query=&destination="+ lat + long +"&travelmode=walking")
     
-   const contentString =
-   '<div id="content">' +
-   '<div id="siteNotice">' +
-   '</div>' +
-   '<h6 id="firstHeading" class="firstHeading">' +loan + ' - ' + pre +'</h6>' +
-   '<div id="bodyContent">' +
-   '<p><b>' + add + '</b>' +
-   '<div id="siteNotice">' +
-   '<a href="'+ button +'"> Abrir no Google Maps</a>' +
-   '</div>' +
-   '</div>';
-   var content = contentString 
+    const contentString =
+      '<div id="content">' +
+      '<div id="siteNotice">' +
+      '</div>' +
+      '<h6 id="firstHeading" class="firstHeading">' + loan + ' - ' + pre + '</h6>' +
+      '<div id="bodyContent">' +
+      '<p>' + add + '</p>' +
+      '<div id="siteNotice">' +
+      '<a href="'+ OpenGM +'"> Abrir no Google Maps</a>' + '<a> / </a>' +
+      '<a href="' + Direction +'"> Rotas (Como Chegar)</a>' +
+      '</div>' +
+      '</div>';
+    var content = contentString
    // loan +' ' + add
 
     google.maps.event.addListener(marker, 'click', (function (marker, content, infowindow) {
