@@ -1,7 +1,7 @@
 // This example requires the Places library. Include the libraries=places
 // parameter when you first load the API. For example:
 // <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&libraries=places">
-//var map, infoWindow;
+var map, infoWindow;
 var locations = [
   ['Linha: L004',-29.1712857,-51.234906,'Bragé', 'Aguardar o transporte a partir de: 21:25:00'],
   ['Linha: L004',-29.1686144,-51.2269452,'Bragé', 'Aguardar o transporte a partir de: 21:25:00'],
