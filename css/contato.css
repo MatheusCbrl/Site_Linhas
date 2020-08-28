@@ -21,28 +21,48 @@ video {
   font-size: 27px;
   margin: 20px;
 }
+/***********************************************/
+/***************** Accordion ********************/
+/***********************************************/
+@import url('https://fonts.googleapis.com/css?family=Tajawal');
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
 
-.panel-heading [data-toggle="collapse"]:after {
-  font-family: 'Glyphicons Halflings';
-  content: ">"; /* "play" icon */
-  float: right;
-  color: #FF3D00;
-  font-size: 18px;
-  line-height: 22px;
-  /* rotate "play" icon from > (right arrow) to down arrow */
-  -webkit-transform: rotate(-90deg);
-  -moz-transform: rotate(-90deg);
-  -ms-transform: rotate(-90deg);
-  -o-transform: rotate(-90deg);
-  transform: rotate(-90deg);
+section{
+	padding: 60px 0;
 }
 
-.panel-heading [data-toggle="collapse"].collapsed:after {
-  /* rotate "play" icon from > (right arrow) to ^ (up arrow) */
-  -webkit-transform: rotate(90deg);
-  -moz-transform: rotate(90deg);
-  -ms-transform: rotate(90deg);
-  -o-transform: rotate(90deg);
-  transform: rotate(90deg);
-  color: #454444;
+#accordion-style-1 h1,
+#accordion-style-1 a{
+    color:#ff3d00;
+}
+#accordion-style-1 .btn-link {
+    font-weight: 400;
+    color: #ff3d00;
+    background-color: transparent;
+    text-decoration: none !important;
+    font-size: 16px;
+    font-weight: bold;
+	padding-left: 25px;
+}
+
+#accordion-style-1 .card-body {
+    border-top: 2px solid #ff3d00;
+}
+
+#accordion-style-1 .card-header .btn.collapsed .fa.main{
+	display:none;
+}
+
+#accordion-style-1 .card-header .btn .fa.main{
+	background: #ff3d00;
+    padding: 13px 11px;
+    color: #ffffff;
+    width: 35px;
+    height: 41px;
+    position: absolute;
+    left: -1px;
+    top: 10px;
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 7px;
+	display:block;
 }
