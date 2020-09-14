@@ -105,7 +105,10 @@
           </div>
         </div>
       </div>
-      <a class="btn btn-success mt-4" href="Entrada/placeDiurno.html">Descubra</a>
+      <a type="button" class="btn btn-success mt-4" data-toggle="tooltip" data-placement="top" title="Mostra paradas do Diurno Ana Rech" href="Entrada/placeDiurno.html">
+        Descubra
+      </a>
+      <!-- <a class="btn btn-success mt-4" href="Entrada/placeDiurno.html">Descubra</a> -->
     </div>
   </section>
   <footer class="py-3">
@@ -135,6 +138,11 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
     crossorigin="anonymous"></script>
+    <script>
+      $(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+})
+    </script>
 </body>
 
 </html>
