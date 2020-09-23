@@ -427,7 +427,7 @@ var locations = [
 ['Linha: L033',-29.1132916,-51.08825,'Caxiense', 'Aguardar o transporte a partir de: 6:10:00'],
 ['Linha: L033',-29.1131349,-51.0903039,'Caxiense', 'Aguardar o transporte a partir de: 6:10:00'],
 ['Linha: L033',-29.1127643,-51.0920747,'Caxiense', 'Aguardar o transporte a partir de: 6:10:00'],
-['Linha: L033',-29.1213348,-51.1002003,'Caxiense', 'Aguardar o transporte a partir de: 6:10:00', 'Linhas/Diurno/L033.html'],
+['Linha: L033',-29.1213348,-51.1002003,'Caxiense', 'Aguardar o transporte a partir de: 6:10:00'],
 ['Linha: L033',-29.120432,-51.0995152,'Caxiense', 'Aguardar o transporte a partir de: 6:10:00'],
 ['Linha: L034',-29.1373094,-50.9802496,'Caxiense', 'Aguardar o transporte a partir de: 6:15:00'],
 ['Linha: L034',-29.1247511,-51.0078415,'Caxiense', 'Aguardar o transporte a partir de: 6:15:00'],
